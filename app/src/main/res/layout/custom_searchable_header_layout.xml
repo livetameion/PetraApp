@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custombar_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical">
+    <RelativeLayout
+        android:id="@+id/custombar_return_wrapper"
+        android:layout_width="55dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/right_oval_ripple"
+        android:focusable="true"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/custombar_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_back"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/custombar_return_wrapper"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/custombar_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search..."
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="#00000000">
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:id="@+id/custombar_mic_wrapper"
+        android:layout_width="55dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/left_oval_ripple"
+        android:focusable="true"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/custombar_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:src="@drawable/mic_icon"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bn_search"
+        android:layout_width="55dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/left_oval_ripple"
+        android:focusable="true"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/custombar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:src="@android:drawable/ic_menu_search"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+</LinearLayout>

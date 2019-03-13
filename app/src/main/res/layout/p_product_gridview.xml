@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="10dp"
+        android:id="@+id/ly_categ"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.yagna.petra.app.Util.P_SquareImageView
+                android:id="@+id/banner_img"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:src="@mipmap/petra"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="1"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:id="@+id/txt_name"
+                            android:textColorHint="@color/colorPrimary"
+                            android:hint="..."
+                            />
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:lines="1"
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/txt_price"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="..."
+                />
+                    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

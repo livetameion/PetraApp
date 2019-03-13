@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Product.Product.ProductActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/txt_branchtitle"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:text="Products"
+                android:textColor="@color/black"/>
+            </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ly_spinner"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin_a"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_h"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/ink_blue"
+                        android:text="@string/category"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_h"
+                        android:background="@color/white"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_5"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/spn_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_subcategory"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin_a"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_h"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/ink_blue"
+                        android:text="@string/subcategory"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_h"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/spn_subcategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:layout_weight="1">
+                        </Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="6dp"
+            />
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:background="#75ffffff"
+            android:layout_gravity="center"
+            android:id="@+id/tv_no_record_"
+            android:visibility="gone"
+            android:text="No records are \nadded"
+            />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_btn_addto_cart"
+                android:layout_margin="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/cs_footer"
+        layout="@layout/screen_footer" />
+</LinearLayout>

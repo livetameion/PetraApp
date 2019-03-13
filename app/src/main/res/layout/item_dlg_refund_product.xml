@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_a"
+        android:orientation="horizontal">
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:id="@+id/rd_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text"
+            android:layout_weight="1"
+            android:text="Refundable Original Price"/>
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:id="@+id/txt_ref_org_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/size_50"
+            android:textSize="@dimen/normal_text"
+            android:text="$0.00"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_a"
+            android:paddingLeft="@dimen/margin_b"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

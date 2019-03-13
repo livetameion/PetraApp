@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".Admin.AdminListActivity">
+    <!--
+    This layout is a two-pane layout for the Items
+    master/detail flow.
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/custom_searchable_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparency_color">
+            <include
+                android:id="@+id/cs_header"
+                layout="@layout/custom_searchable_header_layout" />
+            <LinearLayout
+                android:id="@+id/ly_searchtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <com.cunoraz.tagview.TagView
+                    xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tag_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    tagview:lineMargin="5dp"
+                    tagview:tagMargin="5dp"
+                    tagview:textPaddingLeft="8dp"
+                    tagview:textPaddingTop="5dp"
+                    tagview:textPaddingRight="8dp"
+                    tagview:textPaddingBottom="5dp"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cs_result_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stackFromBottom="true"
+                    android:layout_weight="1"
+                    android:transcriptMode="normal"/>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_btn_addto_cart"
+                    android:layout_margin="16dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+<!--
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_list"
+    android:name="com.yagna.petra.app.Admin.ItemListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".Admin.AdminListActivity"
+    tools:listitem="@layout/item_list_content" />-->

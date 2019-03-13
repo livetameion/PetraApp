@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ly_pay"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:layout_centerHorizontal="true">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/size_70"
+                android:layout_height="@dimen/size_70"
+                android:src="@color/light_blue"
+                app:civ_border_width="18dp"
+                app:civ_border_color="#511a1818"
+                app:civ_fill_color="@color/light_blue"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:src="@mipmap/check"
+                android:padding="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_50"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/size_5"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_50"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="@dimen/size_20">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/size_70"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="@string/thanx_for_bizness"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_title" />
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:id="@+id/msg_cheap_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_b"
+                    android:layout_marginBottom="@dimen/margin_b"
+                    android:layout_marginLeft="@dimen/margin_c"
+                    android:layout_marginRight="@dimen/margin_c"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normal_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/done"
+                        android:textColor="@color/light_blue"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_b"
+                        android:paddingLeft="@dimen/margin_d"
+                        android:paddingRight="@dimen/margin_d"
+                        android:background="@color/grey"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/text_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

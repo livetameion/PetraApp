@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.yagna.petra.app.views.TypefacedButton
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_c"
+                android:textSize="@dimen/big_text"
+                android:textColor="@color/dark_blue"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:text="1"/>
+            <ImageView
+                android:id="@+id/img_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/name_text"
+                android:textColor="@color/black"
+                android:padding="@dimen/margin_f"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/backspace"
+                android:visibility="gone"
+                android:text="1"/>
+        </LinearLayout>
+</LinearLayout>

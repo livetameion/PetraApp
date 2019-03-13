@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EBEBEB</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#31d6d9</color>
+    <color name="black">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="color_header">#AAAAAA</color>
+    <color name="grey">#EBEBEB</color>
+    <color name="white">#fff</color>
+    <color name="dark_blue">#234263</color>
+    <color name="very_light_blue">#97B7CA</color>
+
+    <color name="translucent_black">#75000000</color>
+    <color name="green">#85E2A1</color>
+    <color name="dark_grey">#AEAEAE</color>
+    <color name="semidark_grey">#D9D9D9</color>
+    <color name="grey_white">#e1e1e1</color>
+    <color name="light_blue">#31d6d9</color>
+    <color name="light_red">#20f20823</color>
+
+    <color name="orange">#f5a94b</color>
+    <color name="yellow_white">#f7f5eb</color>
+    <color name="light_black">#48000000</color>
+    <color name="light_yello">#b0f1dd06</color>
+    <color name="dark_green">#00C036</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="ink_blue">#0184E9</color>
+    <color name="green_grey">#4CB6AC</color>
+    <color name="pink">#E95385</color>
+    <color name="yellow">#FFEF42</color>
+    <color name="red">#e21f36</color>
+
+    <color name="transparency_color">#ccffffff</color>
+    <color name="rippleEffectMaskColor">#FAFAFA</color>
+    <color name="rippleEffectWaveColor">#bbbbbb</color>
+</resources>

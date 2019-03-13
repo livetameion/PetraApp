@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_pay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/normal_text">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_b"
+                android:paddingLeft="@dimen/size_5"
+                android:text="View/Edit Details"
+                android:background="@color/grey"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/normal_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/margin_c"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="Name*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="right"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ly_normal_token"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:id="@+id/txt_ref_token_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="Employee ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_e_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="right"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_vp_token"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:id="@+id/txt_vptoken_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="Phone Number*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_str_phone"
+                        android:layout_width="@dimen/size_300"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="right"
+                        android:hint="Just Numbers"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_charity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="right"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="4 Digit PIN*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="right"
+                        android:hint="****"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_isactive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/size_10"
+                    android:paddingBottom="@dimen/size_10"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/size_5"
+                        android:text="Token Used"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_text" />
+
+
+                        <Spinner
+                            android:id="@+id/spn_active"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/array_isactive"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                           />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"></LinearLayout>
+            </LinearLayout>
+
+
+            <com.yagna.petra.app.views.TypefacedButton
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_green"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/margin_b"
+                android:text="      UPDATE     "
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_d" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

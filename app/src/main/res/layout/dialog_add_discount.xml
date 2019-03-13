@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/size_20">
+    <LinearLayout
+        android:layout_width="@dimen/size_600"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/texttitle_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Add/Edit Discount"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtxtitlep_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Discount Title">
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/p_name"
+                        style="@style/editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:focusable="true"
+                        android:gravity="left|center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="@dimen/size_10"
+                        android:paddingRight="30dp"
+                        android:layout_marginLeft="@dimen/size_5"
+                        android:textSize="@dimen/normal_text" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/colorAccent"
+                        app:cardCornerRadius="5dp"
+                        android:id="@+id/cv_sku"
+                        app:cardElevation="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:hint="Discount Rate(%)">
+                            <com.yagna.petra.app.views.TypefacedEditText
+                                android:id="@+id/p_rate"
+                                style="@style/editext"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:drawablePadding="5dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="left|center_vertical"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberDecimal"
+                                android:layout_marginLeft="@dimen/size_5"
+                                android:paddingTop="@dimen/size_10"
+                                android:paddingRight="30dp"
+                                android:selectAllOnFocus="false"
+                                android:textSize="@dimen/normal_text" />
+                        </android.support.design.widget.TextInputLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/colorAccent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txtxtitlep_stock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/size_20"
+                            android:background="@color/white"
+                            android:hint="Active? :" >
+                        </com.yagna.petra.app.views.TypefacedTextView>
+                           <Switch
+                               android:id="@+id/active_switch"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textOff="false"
+                               android:textOn="true"/>
+                       </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtxtitlep_discrption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Description">
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/p_discrption"
+                        style="@style/editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:maxLength="5000"
+                        android:maxLines="100"
+                        android:layout_marginLeft="@dimen/size_5"
+                        android:paddingTop="@dimen/size_10"
+                        android:paddingRight="30dp"
+                        android:textSize="@dimen/normal_text" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtxtitlep_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Terms &amp; Conditions">
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/p_terms"
+                    style="@style/editext"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="3000"
+                    android:maxLines="10"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:paddingTop="@dimen/size_10"
+                    android:paddingRight="30dp"
+                    android:textSize="@dimen/normal_text" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.v7.widget.CardView>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAccent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@mipmap/done_btn_cicle"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@mipmap/back_btn_circle"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

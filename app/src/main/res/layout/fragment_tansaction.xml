@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textIsSelectable="true"
+    android:background="@color/white"
+    android:padding="@dimen/margin_a"
+    android:orientation="vertical"
+    tools:context=".Admin.Transaction.TransactionFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/header_transaction"></include>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:layout_weight="1"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_transaction_list">
+    </ListView>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:gravity="right"
+    android:layout_gravity="right"
+    android:paddingTop="1dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_5"
+        app:cardCornerRadius="@dimen/size_5">
+
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="@dimen/margin_f"
+        android:layout_height="@dimen/margin_f"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Previous"
+        android:src="@mipmap/left_arrow"
+        android:textColor="@color/white" />
+    </android.support.v7.widget.CardView>
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:id="@+id/txt_page_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:text="0"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="@dimen/name_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Showing Entries"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ly_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_5"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_5"
+        app:cardCornerRadius="@dimen/size_5">
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/margin_f"
+        android:layout_height="@dimen/margin_f"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:src="@mipmap/right_arrow"
+        android:textColor="@color/white" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

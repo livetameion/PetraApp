@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xImgCropView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <com.yagna.petra.app.Cropper.CropImageView
+        android:id="@+id/xIvCropView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"/>
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" -->
+    <!--android:layout_gravity="center"/>-->
+    <FrameLayout
+        android:id="@+id/xLayButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#000000"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/xBtnCropCancel"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/xBtnCropOk"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

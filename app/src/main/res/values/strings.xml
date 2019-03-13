@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Petra Lite</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="flavour_dispenser">Flavour Dispenser</string>
+    <string name="change_size">Change a size</string>
+    <string name="choose_up_3">Choose up to 3 flavours</string>
+    <string name="txt_plz_wit">Please Wait ...</string>
+    <string name="dataconnection">No Internet Connection. Please Turn On !!!</string>
+    <string name="loginfailed">The phone and password don\'t match.</string>
+    <string name="no_trsctn">No transactions today.</string>
+    <string name="version">Version 1.4.4</string>
+    <string name="cannot_purachse_own">You can\'t make transactions from your own store.</string>
+    <string name="title_item_list">PETRA Lite</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="search_hint">Transaction Id</string>
+    <string name="title_no_storecredit">No Store Credits!</string>
+    <string name="msg_no_storecredit">You have no Store Credit available. Please fill up by buying more today.</string>
+    <string name="title_no_storecredit_merchant">You cant use Cashless Exchange because you have no Store Credit available. Please fill up or pay by Cash/Card today.</string>
+
+    <string name="title_cancel_transaction">Cancel Transaction</string>
+    <string name="msg_cancel_transaction">Are you sure?</string>
+    <string name="title_cheap_credit">Want Cheap Store Credit?</string>
+    <string name="title_roundup_chatity">Round up for charity?</string>
+    <string name="notice">Notice</string>
+    <string name="msg_not_buy_sc">You can not but store credits using Cashless Exchange. </string>
+    <string name="msg_roundup_exchange">To use Cashless Exchange, you only pay in Store Credit, which means we must round up the price to the nearest dollar. Is that OK?</string>
+    <string name="less_amount">You can not use your store credits because your entered amount is lesser than $1.00</string>
+    <string name="less_feathers">Sorry, We can\'t refund for the all bought tokens because the customer\'s current store credits is less than the customer had bought.</string>
+    <string name="invalid">invalid tokens</string>
+    <string name="title_tip">Tip ?</string>
+    <string name="enter_tip">Enter Tip Amount</string>
+    <string name="loading">Loading...</string>
+    <string name="login">Login</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="logout">Logout</string>
+    <string name="want_cheap_credit">Want cheap Store Credit?</string>
+    <string name="nothanx">NO THANKS!</string>
+    <string name="absolutely">ABSOLUTELY</string>
+    <string name="sure">Sure!</string>
+    <string name="payment_invoice">Payment Invoice</string>
+    <string name="thanx_for_bizness">Thank you for your business :)</string>
+    <string name="done">Done!</string>
+    <string name="refund">Refund</string>
+    <string name="cashier">Cashier</string>
+    <string name="enter_pin">Please! confirm by your PIN.</string>
+    <string name="failure">Failure!</string>
+    <string name="install">Install</string>
+    <string name="your_number">Your Number :</string>
+    <string name="login_as">Login As :</string>
+    <string name="title_memeber_login">Freedom Choice Rewards Member Login</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="pin">PIN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="signin">SIGN IN</string>
+    <string name="title_memeber_signup">Sign up for Freedom Choice Rewards</string>
+    <string name="your_name">Your Name :</string>
+    <string name="name">Name</string>
+    <string name="number">Number :</string>
+    <string name="digit_pin">4-6 Digit PIN</string>
+    <string name="confirm_pin">Confirm PIN :</string>
+    <string name="hint_confirm_pin">Confirm PIN</string>
+    <string name="hint_pin">PIN :</string>
+    <string name="hint_email">EMAIL :</string>
+
+    <string name="use_store_credit">USE STORE CREDIT</string>
+    <string name="token_5">5</string>
+    <string name="token_10">10</string>
+    <string name="choose_amount_to_buy">Choose Amount To Buy</string>
+    <string name="buy_store_credit">Buy Store Credit</string>
+    <string name="current_store_credit">Current Store Credit : </string>
+    <string name="ce_notice">You can buy this but only with Cash or Card Payment Method</string>
+    <string name="nointernet">No internet Connection</string>
+    <string-array name="array_isactive">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="productnamenull">Please enter name.</string>
+    <string name="productprice">Amount should be entered in numbers only.</string>
+    <string name="descriptionnull">Please enter description.</string>
+    <string name="productcodenull">Amount should be entered in numbers only.</string>
+
+    <!--Directory Names-->
+    <string name="dirSettings">Settings</string>
+    <string name="dirMedia">Media</string>
+    <string name="dirImages">Images</string>
+    <string name="dirVideos">Videos</string>
+    <string name="withtext">WithText</string>
+    <string name="withouttext">WithoutText</string>
+    <string name="openinghours">Edit Business Hours</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="category">Category</string>
+    <string name="subcategory">SubCategory</string>
+    <string name="typenull">Enter Type of the Modifier</string>
+    <string name="welcome">Hello</string>
+    <string name="navigation_drawer_login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="valid_email">a@b.com</string>
+    <string name="sumation">    $221.00 ($100x2)\n+ $5556.00  ($100.00 x5)</string>
+
+</resources>

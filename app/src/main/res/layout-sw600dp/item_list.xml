@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".Admin.AdminListActivity">
+    <!--
+    This layout is a two-pane layout for the Items
+    master/detail flow.
+
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/item_list"
+            android:name="com.yagna.petra.app.Admin.ItemListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.yagna.petra.app.Admin.AdminListActivity"
+            tools:listitem="@layout/item_list_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_a"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_gravity="right"
+                android:text="Outstanding Store Credit:"
+                android:textSize="@dimen/normal_text" />
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/store_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_a"
+                android:layout_marginRight="@dimen/margin_a"
+                android:layout_marginTop="@dimen/margin_a"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/ink_blue"
+                android:textSize="@dimen/name_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_a"
+                android:layout_marginTop="@dimen/margin_a"
+                android:text="Store Revenue:"
+                android:textSize="@dimen/normal_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/store_revenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_a"
+                android:layout_marginRight="@dimen/margin_a"
+                android:layout_marginTop="@dimen/margin_a"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/normal_text"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_maintaglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_h"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="@dimen/margin_a"
+        android:gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@mipmap/petra" />
+
+    <LinearLayout
+        android:id="@+id/ly_sigin_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_a"
+        android:orientation="vertical">
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:id="@+id/id_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/size_10"
+            android:gravity="center"
+            android:text="@string/title_memeber_login"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/normal_text"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+          >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_h"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:text="@string/login_as"
+                            android:textSize="@dimen/normal_text"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/ink_blue" />
+                        <Spinner
+                            android:id="@+id/spn_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:visibility="visible">
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_10"
+                            android:text="@string/your_number"
+                            android:textSize="@dimen/normal_text"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/ink_blue" />
+                        <com.yagna.petra.app.views.TypefacedEditText
+                            android:id="@+id/edt_cust_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_a"
+                            android:layout_marginRight="@dimen/margin_b"
+                            android:backgroundTint="@color/white"
+                            android:gravity="right|center_vertical"
+                            android:hint="@string/phone_number"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="14"
+                            android:text=""
+                            android:paddingLeft="@dimen/size_70"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dark_grey"
+                            android:textSize="@dimen/name_text"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+               <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedEditText
+                        android:id="@+id/edt_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:hint="@string/pin"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_grey"
+                        android:textSize="@dimen/name_text" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_d"
+            android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_b"
+                        android:text="@string/signup"
+                        android:layout_weight="1"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/normal_text" />
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/dark_grey"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_b"
+                        android:text="@string/signin"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_sigup_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_signup_view" />
+    </LinearLayout>
+
+
+</LinearLayout>

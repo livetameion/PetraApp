@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vp_catlog"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="right"
+                    android:textSize="25sp"
+                    android:padding="10dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/btn_close"
+                    android:background="@mipmap/cacel"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp" />
+        </RelativeLayout>
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="No Records"
+            android:id="@+id/offer_norecord"
+
+            />
+        <!--  <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/recycle_offer"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <!-- <ImageView
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             android:paddingRight="10dp"
+             android:elevation="10dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/ic_chevron_right_black_24dp"/>-->
+        <!-- <com.calica.bizeee.ui.TinderStackLayout
+             android:id="@+id/tsl"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>-->
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/offer_indicator"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@+id/vp_catlog"
+            app:ci_drawable="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

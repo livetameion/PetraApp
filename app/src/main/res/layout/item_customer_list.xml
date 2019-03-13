@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayoutProdottoGenerale"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:padding="@dimen/margin_a"
+        android:id="@+id/ly_item"
+        android:layout_marginBottom="10dp">
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/list_name"
+            android:layout_weight="1"
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/dark_grey"
+            android:gravity="left" />
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/list_phone"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/normal_text"
+            android:layout_weight="1.1"
+            android:gravity="left"
+            />
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/list_email"
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:visibility="visible"
+            android:id="@+id/list_isactive"
+            android:layout_weight="1.2"
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/dark_grey"
+            android:gravity="left" />
+    </LinearLayout>
+
+</LinearLayout>

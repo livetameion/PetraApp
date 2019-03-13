@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_a"
+            android:orientation="vertical">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_10"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="Store Information"
+                android:textColor="@color/ink_blue"
+                android:textSize="@dimen/size_25"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_a"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Business Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_biz_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Owner's Name: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_ownr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Address: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:hint="Address"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="City: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_str_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:hint="City"
+                    android:imeOptions="actionDone"
+
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_weight="0.8"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="State: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/margin_a"
+                    android:paddingRight="@dimen/margin_a"
+                    android:paddingBottom="@dimen/margin_a">
+
+                    <Spinner
+                        android:id="@+id/spn_str_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Zip: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_str_zipconde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:hint="Zipcode"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/size_20"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Phone: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_str_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:hint="Phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Fax:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_ownr_fax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/size_20"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Website:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_ownr_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="textWebEmailAddress"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Email:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <com.yagna.petra.app.views.TypefacedEditText
+                    android:id="@+id/edt_ownr_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:orientation="horizontal">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Charity Place:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <Spinner
+                    android:id="@+id/edt_ownr_charity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ly_isTipactive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:paddingTop="@dimen/size_10"
+                android:paddingBottom="@dimen/size_10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_b"
+                    android:layout_marginTop="@dimen/margin_a"
+                    android:layout_marginBottom="@dimen/margin_a"
+                    android:background="@color/grey"
+                    android:orientation="horizontal" />
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:text="Ask Tip?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+
+                <Spinner
+                    android:id="@+id/spn_tip_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:entries="@array/array_isactive"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_b"
+                android:layout_marginTop="@dimen/margin_a"
+                android:layout_marginBottom="@dimen/margin_a"
+                android:background="@color/grey"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

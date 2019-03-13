@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/linearLayoutProdottoGenerale"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:padding="@dimen/margin_a"
+        android:layout_marginBottom="10dp">
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TransactionID"
+            android:id="@+id/list_cust"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:maxEms="5"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="@dimen/normal_text"
+            android:gravity="left"
+            />
+    <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/list_date"
+            android:textColor="@color/black"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/normal_text"
+            android:gravity="left" />
+
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/list_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text"
+            android:layout_weight="1.1"
+            android:gravity="left" />
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:visibility="visible"
+            android:id="@+id/list_type"
+            android:textColor="@color/black"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/normal_text"
+            android:gravity="left" />
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:id="@+id/list_action"
+            android:textSize="@dimen/normal_text"
+            android:textColor="@color/black"
+            android:layout_weight="1.2"
+            android:layout_marginRight="@dimen/size_5"
+            android:gravity="left"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_grey"/>
+</LinearLayout>

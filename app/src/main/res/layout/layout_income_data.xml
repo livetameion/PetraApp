@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/margin_a"
+            android:text="Income Data"
+            android:textColor="@color/ink_blue"
+            android:textSize="@dimen/size_25"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_a"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/txt_ref_token_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_5"
+                android:text="Avg Monthly Sales"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="$"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedEditText
+                android:id="@+id/edt_avg_mon_sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:backgroundTint="@color/transparent"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="Transactions/Month"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedEditText
+                android:id="@+id/edt_trn_permonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:backgroundTint="@color/transparent"
+
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_5"
+                android:text="Avg Transaction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedEditText
+                android:id="@+id/edt_avg_trn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:backgroundTint="@color/transparent"
+
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_a"
+        android:orientation="vertical">
+
+        <com.yagna.petra.app.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/margin_a"
+            android:text="Value Proposition"
+            android:textColor="@color/ink_blue"
+            android:textSize="@dimen/size_25"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_a"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="VP Discount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spn_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="@dimen/margin_e"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_20" />
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:paddingRight="@dimen/margin_e"
+                    android:text="%"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_20" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:id="@+id/txt_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_5"
+                android:text="Value Proposition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="$"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20"
+                android:visibility="invisible" />
+
+            <com.yagna.petra.app.views.TypefacedEditText
+                android:id="@+id/edt_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:backgroundTint="@color/transparent"
+
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_5"
+                android:text="VP Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/size_5"
+                android:text="$"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+
+            <com.yagna.petra.app.views.TypefacedEditText
+                android:id="@+id/edt_vp_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:backgroundTint="@color/transparent"
+
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_a"
+            android:layout_marginBottom="@dimen/margin_a"
+            android:layout_marginLeft="@dimen/margin_b"
+            android:background="@color/grey"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

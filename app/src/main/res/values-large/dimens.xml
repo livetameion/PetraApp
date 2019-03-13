@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_title">23sp</dimen>
+    <dimen name="normal_text">22sp</dimen>
+    <dimen name="header_icon">80dp</dimen>
+    <dimen name="big_btn">170dp</dimen>
+    <dimen name="margin_a">10dp</dimen>
+    <dimen name="margin_b">15dp</dimen>
+    <dimen name="margin_c">20dp</dimen>
+    <dimen name="margin_c2">20dp</dimen>
+    <dimen name="margin_d">25dp</dimen>
+    <dimen name="margin_e">30dp</dimen>
+    <dimen name="margin_f">40dp</dimen>
+    <dimen name="margin_g">50dp</dimen>
+    <dimen name="margin_h">60dp</dimen>
+    <dimen name="margin_i">70dp</dimen>
+    <dimen name="small_icon">50dp</dimen>
+    <dimen name="switch_leth">400dp</dimen>
+    <dimen name="radio_size">25dp</dimen>
+    <dimen name="header_text_size">35sp</dimen>
+    <dimen name="profile_img">250dp</dimen>
+    <dimen name="name_text">25sp</dimen>
+    <dimen name="mintextsize">14dp</dimen>
+
+
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_22">22sp</dimen>
+    <dimen name="size_25">25sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_50">50sp</dimen>
+    <dimen name="size_70">100sp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_200">200dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="t_size_20">20dp</dimen>
+    <dimen name="size_300">350dp</dimen>
+    <dimen name="size_30">25dp</dimen>
+    <dimen name="size_600">450dp</dimen>
+    <dimen name="size_400">450dp</dimen>
+
+
+</resources>

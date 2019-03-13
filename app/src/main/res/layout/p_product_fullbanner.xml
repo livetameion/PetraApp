@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_full"
+    android:background="#000"
+    android:orientation="vertical">
+    <com.calica.Bizee.util.TouchImageView
+        android:id="@+id/image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter" />
+
+
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_price"
+        android:background="#8d000000"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|left"
+        android:layout_above="@+id/product_desc" />
+
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_desc"
+        android:background="#8d000000"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:background="#8d000000"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|left"
+        android:layout_above="@+id/product_price"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

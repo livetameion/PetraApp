@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_pay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/size_20">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_b"
+                    android:textSize="@dimen/normal_text"
+                    android:paddingBottom="@dimen/margin_b"
+                    android:text="@string/payment_invoice"
+                    android:textColor="@color/dark_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_c">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size_5"
+                        android:id="@+id/dlg_rec_prodlist">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Original Price"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_ref_org_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tip"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_tip_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.0"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+\                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_normal_token"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_ref_token_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Original Total"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_token"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:textColor="@color/dark_grey"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textSize="@dimen/normal_text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_vp_token"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_vptoken_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Original Totalaaaaa"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_vptoken"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_charity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_charity_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Donation to Charity"
+                            android:layout_weight="1"
+
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_charity_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_insert_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inserted Token"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_inserted_token"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay Method"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_pay_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/normal_text" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/margin_a"
+                        android:background="@color/dark_grey"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_a"
+                        android:orientation="horizontal">
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price You Pay"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_text"
+                            android:textStyle="bold" />
+
+                        <com.yagna.petra.app.views.TypefacedTextView
+                            android:id="@+id/txt_you_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="$0.00"
+                            android:layout_marginLeft="@dimen/size_30"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_text"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.yagna.petra.app.views.TypefacedButton
+                    android:id="@+id/btn_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@color/dark_green"
+                    android:paddingTop="@dimen/margin_b"
+                    android:paddingBottom="@dimen/margin_a"
+                    android:text="PAY"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

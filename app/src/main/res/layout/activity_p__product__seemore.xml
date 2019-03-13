@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_p__catlog__seemore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/cardback"
+        android:id="@+id/txt_title_product"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.95"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="3"
+        android:id="@+id/grid_product"
+        android:layout_marginTop="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"
+        android:focusable="true"
+        android:clickable="true"></GridView>
+    <com.yagna.petra.app.views.TypefacedTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_weight="0.05"
+        android:id="@+id/product_seemore_grid"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible"
+        android:text="See More.."/>
+</LinearLayout>

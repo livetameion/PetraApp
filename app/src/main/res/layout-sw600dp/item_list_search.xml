@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".AdvncedCashier.Search.SearchActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/custom_searchable_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparency_color">
+            <com.yagna.petra.app.views.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:id="@+id/txt_all"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/black"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/size_10"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cs_result_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stackFromBottom="true"
+                    android:transcriptMode="normal"/>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_btn_addto_cart"
+                    android:layout_margin="16dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="0.2">
+    <LinearLayout
+        android:id="@+id/ly_searchtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.cunoraz.tagview.TagView
+            xmlns:tagview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tag_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            tagview:lineMargin="5dp"
+            tagview:tagMargin="5dp"
+            tagview:textPaddingLeft="8dp"
+            tagview:textPaddingTop="5dp"
+            tagview:textPaddingRight="8dp"
+            tagview:textPaddingBottom="5dp"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2" />
+</LinearLayout>
+
+</LinearLayout>

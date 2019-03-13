@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/ly_empty"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/size_20">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"       >
+                <com.yagna.petra.app.views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_b"
+                    android:paddingBottom="@dimen/margin_b"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_text"
+                    android:textColor="@color/dark_grey"
+                    android:text="Choose Payment Method"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_d"
+                    android:orientation="horizontal"       >
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_b"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/black"
+                        android:text="Total Due Amount "
+                        />
+                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_b"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/size_70"
+                        android:text="$0.0"
+                        android:textSize="@dimen/normal_text"
+                        android:id="@+id/txt_total_due"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_d"
+                    android:orientation="horizontal">
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_exchange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/light_blue"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_a"
+                        android:text="Cashless Exchange"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text" />
+                    <LinearLayout
+                        android:id="@+id/white_seprator"
+                        android:layout_width="1dp"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/light_blue"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_b"
+                        android:text="CASH"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text" />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+                    <com.yagna.petra.app.views.TypefacedButton
+                        android:id="@+id/btn_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/light_blue"
+                        android:paddingTop="@dimen/margin_b"
+                        android:paddingBottom="@dimen/margin_b"
+                        android:text="Card"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
