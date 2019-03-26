@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context=".Product.Product.ProductActivity">
+    tools:context=".Admin.Product.Product.ProductActivity">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
             android:background="?attr/colorPrimary"
             app:theme="@style/ToolbarColoredBackArrow"
             app:popupTheme="@style/AppTheme.PopupOverlay" >
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/txt_branchtitle"
                 android:layout_width="match_parent"
                 android:gravity="center_vertical"
@@ -55,7 +55,7 @@
                     android:layout_height="@dimen/margin_h"
                     android:gravity="center"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
@@ -74,7 +74,7 @@
                         android:layout_marginLeft="@dimen/size_5"
                         android:orientation="horizontal">
 
-                        <com.yagna.petra.app.views.TypefacedTextView
+                        <com.pos.petra.app.Views.TypefacedTextView
                             android:id="@+id/spn_category"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -102,7 +102,7 @@
                     android:gravity="center"
                     android:visibility="visible"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
@@ -139,7 +139,7 @@
             android:divider="@android:color/transparent"
             android:dividerHeight="6dp"
             />
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"

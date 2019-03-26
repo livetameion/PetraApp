@@ -39,7 +39,7 @@
                 android:layout_height="@dimen/margin_h"
                 android:gravity="center"
                 android:orientation="horizontal">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -81,7 +81,7 @@
                 android:gravity="center"
                 android:visibility="visible"
                 android:orientation="horizontal">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -122,7 +122,7 @@
                     android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_pin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedButton
+                    <com.pos.petra.app.Views.TypefacedButton
                         android:id="@+id/btn_signin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -177,14 +177,14 @@
                 android:layout_marginTop="@dimen/margin_d"
                 android:background="@android:color/transparent"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/ink_blue"
                     android:textSize="@dimen/margin_c2"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/tutorial"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_gravity="center_horizontal"
@@ -194,7 +194,7 @@
 
         </LinearLayout>
 
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

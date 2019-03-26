@@ -34,7 +34,7 @@
                     android:padding="@dimen/margin_a"
                     android:background="@color/grey"
                     android:gravity="center_vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/login_now"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -112,7 +112,7 @@
                         android:clickable="false"
                         android:gravity="center"
                         />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/edt_pin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                         android:clickable="false"
                         android:gravity="center"
                         />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="$"
@@ -215,7 +215,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <com.yagna.petra.app.views.TypefacedButton
+                        <com.pos.petra.app.Views.TypefacedButton
                             android:id="@+id/btn_enter"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -243,7 +243,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <com.yagna.petra.app.views.TypefacedButton
+                        <com.pos.petra.app.Views.TypefacedButton
                             android:id="@+id/btn_today_trans"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

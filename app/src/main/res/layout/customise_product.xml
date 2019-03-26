@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <include
+        layout="@layout/custom_searchable_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="#000000"
+        android:paddingTop="@dimen/size_50"
+        android:theme="@style/NavigationDrawerStyle">
+
+        <LinearLayout
+            android:id="@+id/custom_searchable_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparency_color"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency_color"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/left_oval_ripple"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_back_grey"
+                    android:src="@drawable/ic_back_blue" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:background="@color/transparency_color"
+                android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_add_new_categ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                app:cardCornerRadius="@dimen/size_20">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_white"
+                    android:orientation="horizontal">
+
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:id="@+id/txt_add_new_categ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/margin_c"
+                        android:layout_marginTop="@dimen/size_5"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:text="Add New Category"
+                        android:textColor="@color/black">
+
+                        <requestFocus />
+                    </com.pos.petra.app.Views.TypefacedTextView>
+
+                    <RelativeLayout
+                        android:layout_width="55dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/left_oval_ripple"
+                       android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/custombar_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_add_blue" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.pos.petra.app.Views.TypefacedTextView
+                    android:id="@+id/txt_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="@dimen/size_10"
+                    android:text="All"
+                    android:paddingBottom="@dimen/size_10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="17dp"
+                android:background="@color/dark_grey"
+                android:paddingBottom="@dimen/size_5"
+                android:paddingTop="@dimen/size_10" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cs_result_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stackFromBottom="true"
+                    android:paddingRight="@dimen/size_10"
+                    android:transcriptMode="normal" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:src="@mipmap/shopping_cart"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/dark_blue" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

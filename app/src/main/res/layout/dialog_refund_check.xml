@@ -24,7 +24,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -44,13 +44,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Refundable Original Price"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_ref_org_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -78,14 +78,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_ref_token_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Original Total"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_token"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,14 +113,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_vptoken_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Original Totalaaaaa"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_vptoken"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -147,14 +147,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_charity_place"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Donation to Charity"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_charity_amount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -182,13 +182,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Tip"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_tip_amount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -216,13 +216,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Inserted Token"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_inserted_token"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -252,13 +252,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:text="Pay Method"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_pay_method"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -290,14 +290,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/normal_text"
                         android:textStyle="bold"
                         android:text="Customer will be refunded"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_you_refund"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -323,7 +323,7 @@
                             android:paddingLeft="@dimen/margin_b"
                             android:paddingRight="@dimen/margin_b"
                             android:orientation="horizontal">
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -340,14 +340,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_a"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/dark_grey"
                         android:textSize="@dimen/normal_text"
                         android:textStyle="bold"
                         android:text="Customer had Paid"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_you_pay"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -373,7 +373,7 @@
                             android:paddingLeft="@dimen/margin_b"
                             android:paddingRight="@dimen/margin_b"
                             android:orientation="horizontal">
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"

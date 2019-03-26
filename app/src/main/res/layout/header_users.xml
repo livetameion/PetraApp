@@ -2,21 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:id="@+id/linearLayoutProdottoGenerale"
     tools:ignore="MissingDefaultResource">
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
         android:padding="@dimen/margin_a"
         android:gravity="left"
         android:layout_marginBottom="10dp">
-    <com.yagna.petra.app.views.TypefacedTextView
-            android:layout_width="match_parent"
+    <com.pos.petra.app.Views.TypefacedTextView
+            android:layout_width="@dimen/size_200"
             android:layout_height="wrap_content"
             android:text="Name"
             android:id="@+id/list_date"
@@ -24,8 +24,8 @@
             android:layout_weight="1"
             android:textSize="@dimen/text_title"
             android:gravity="left" />
-    <com.yagna.petra.app.views.TypefacedTextView
-        android:layout_width="match_parent"
+    <com.pos.petra.app.Views.TypefacedTextView
+        android:layout_width="@dimen/size_200"
         android:layout_height="wrap_content"
         android:text="Emp. ID"
         android:id="@+id/list_cust"
@@ -37,8 +37,8 @@
         android:textSize="@dimen/text_title"
         android:gravity="left"
         />
-        <com.yagna.petra.app.views.TypefacedTextView
-            android:layout_width="match_parent"
+        <com.pos.petra.app.Views.TypefacedTextView
+            android:layout_width="@dimen/size_200"
             android:layout_height="wrap_content"
             android:text="Phone"
             android:id="@+id/list_action"
@@ -47,8 +47,8 @@
             android:layout_weight="1.1"
             android:gravity="left"
            />
-        <com.yagna.petra.app.views.TypefacedTextView
-            android:layout_width="match_parent"
+        <com.pos.petra.app.Views.TypefacedTextView
+            android:layout_width="@dimen/size_300"
             android:layout_height="wrap_content"
             android:text="Email"
             android:id="@+id/list_price"
@@ -57,8 +57,8 @@
             android:layout_weight="1"
             android:gravity="left" />
 
-        <com.yagna.petra.app.views.TypefacedTextView
-            android:layout_width="match_parent"
+        <com.pos.petra.app.Views.TypefacedTextView
+            android:layout_width="@dimen/size_100"
             android:layout_height="wrap_content"
             android:text="Active"
             android:visibility="visible"

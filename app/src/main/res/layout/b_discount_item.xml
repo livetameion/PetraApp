@@ -14,7 +14,6 @@
         android:layout_margin="10dp"
         app:cardElevation="5dp"
         android:id="@+id/ly_categ"
-
         app:cardCornerRadius="5dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -23,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
+            android:padding="@dimen/size_10"
             android:orientation="vertical">
 
             <LinearLayout
@@ -39,67 +38,64 @@
                     android:background="@android:color/transparent"
                     >
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:focusable="true"
                         android:layout_margin="5dp"
                         android:id="@+id/txt_titlepname"
-                        style="@style/text"
+                        
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/black"
                         android:backgroundTint="@color/white"
                         android:imeOptions="actionDone"
                         android:gravity="left|center_vertical"
                         android:paddingRight="30dp"
                         android:drawablePadding="5dp"
-                        android:hint="Title:"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:text="Title:"/>
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left|center_vertical"
                         android:layout_weight="1"
-                        style="@style/text"
                         android:focusable="true"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/radium"
                         />
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:focusable="true"
                         android:layout_margin="5dp"
                         android:id="@+id/txt_title_code"
-                        style="@style/text"
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/black"
                         android:backgroundTint="@color/white"
                         android:imeOptions="actionDone"
                         android:gravity="left|center_vertical"
                         android:paddingRight="30dp"
                         android:drawablePadding="5dp"
-                        android:hint="Rate:"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:text="Rate:"/>
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_rate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left|center_vertical"
                         android:layout_weight="1"
-                        style="@style/text"
                         android:focusable="true"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/radium"
                         />
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -107,27 +103,26 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:id="@+id/txt_titleprice"
-                        style="@style/text"
+                        
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/black"
                         android:backgroundTint="@color/white"
                         android:imeOptions="actionDone"
                         android:gravity="left|center_vertical"
                         android:paddingRight="30dp"
                         android:drawablePadding="5dp"
-                        android:hint="Status:"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                        android:text="Status:"/>
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_active"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/text"
                         android:layout_weight="1"
                         android:gravity="left|center_vertical"
                         android:focusable="true"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:focusableInTouchMode="true"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/radium"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -136,102 +131,103 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/text"
+                    
                     android:id="@+id/txt_titledescription"
                     android:layout_gravity="center"
                     android:focusable="true"
                     android:layout_margin="5dp"
                     android:focusableInTouchMode="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/black"
                     android:backgroundTint="@color/white"
                     android:imeOptions="actionDone"
                     android:gravity="left|center_vertical"
                     android:paddingRight="30dp"
                     android:drawablePadding="5dp"
-                    android:hint="Description :"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                    android:text="Description :"/>
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/product_desc"
                     android:layout_width="match_parent"
-                    style="@style/text"
+                    
                     android:layout_height="wrap_content"
                     android:gravity="left|center_vertical"
                     android:focusable="true"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:focusableInTouchMode="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/dark_grey"
                     />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/text"
+                    
 
                     android:layout_gravity="center"
                     android:focusable="true"
                     android:layout_margin="5dp"
                     android:focusableInTouchMode="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/black"
                     android:backgroundTint="@color/white"
                     android:imeOptions="actionDone"
                     android:gravity="left|center_vertical"
                     android:paddingRight="30dp"
                     android:drawablePadding="5dp"
-                    android:hint="Description :"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                    android:text="Terms &amp; Condition :"/>
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/product_terms"
                     android:layout_width="match_parent"
-                    style="@style/text"
+                    
                     android:layout_height="wrap_content"
                     android:gravity="left|center_vertical"
                     android:focusable="true"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:focusableInTouchMode="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/dark_grey"
                     />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"
                 android:gravity="left"
-                android:background="@color/colorAccent"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="right"
-                    android:background="@android:color/transparent">
+                android:orientation="horizontal"
+                android:visibility="visible" />
 
-                    <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:textSize="25sp"
-                        android:layout_margin="5dp"
-                        android:padding="10dp"
-                        android:layout_gravity="center"
-                        android:id="@+id/edit_"
-                        android:background="@mipmap/edit_btn_circle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_10">
 
-                        />
+                <ImageView
+                    android:id="@+id/edit_"
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/circle_back_grey"
+                    android:padding="@dimen/size_5"
+                    android:src="@mipmap/pencil" />
 
-                    <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:textSize="25sp"
-                        android:layout_margin="10dp"
-                        android:padding="10dp"
-                        android:layout_gravity="center"
-                        android:id="@+id/delete_"
-                        android:background="@mipmap/delete_btn_circle"
-                        />
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/delete_"
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:background="@drawable/circle_back_grey"
+                    android:padding="@dimen/size_5"
+                    android:src="@mipmap/delete_blue" />
+
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>

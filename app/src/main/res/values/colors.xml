@@ -16,8 +16,10 @@
     <color name="green">#85E2A1</color>
     <color name="dark_grey">#AEAEAE</color>
     <color name="semidark_grey">#D9D9D9</color>
-    <color name="grey_white">#e1e1e1</color>
-    <color name="light_blue">#31d6d9</color>
+    <color name="grey_white">#F1F1F1</color>
+    <color name="light_blue">#31d6d9</color>44E1D0
+    <color name="radium">#44E1D0</color>
+
     <color name="light_red">#20f20823</color>
 
     <color name="orange">#f5a94b</color>

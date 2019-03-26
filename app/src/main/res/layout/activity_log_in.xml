@@ -16,8 +16,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/size_70"
-                android:paddingRight="@dimen/size_70"
+                android:paddingLeft="@dimen/size_50"
+                android:paddingRight="@dimen/size_50"
                 android:gravity="center"
                 android:orientation="horizontal">
 

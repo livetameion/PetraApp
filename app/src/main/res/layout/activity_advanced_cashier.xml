@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
+   >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,125 +15,219 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/white">
+            android:layout_weight="1">
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+
                 android:orientation="vertical">
                 <LinearLayout
                     android:id="@+id/ly_subtotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:visibility="gone">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/size_10"
+                                android:layout_marginBottom="@dimen/size_5"
+                                app:cardCornerRadius="@dimen/size_10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/size_10">
+
+                                    <com.pos.petra.app.Views.TypefacedTextView
+                                        android:id="@+id/txt_summation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right|bottom"
+                                        android:layout_margin="@dimen/size_10"
+                                        android:gravity="bottom|right"
+                                        android:text="@string/sumation"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/normal_text"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/size_10"
+                                    android:layout_marginBottom="@dimen/size_5"
+                                    app:cardCornerRadius="@dimen/size_10">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/size_20">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <com.pos.petra.app.Views.TypefacedTextView
+                                                android:id="@+id/txt_subtotal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/normal_text"
+                                                android:textStyle="bold" />
+
+                                            <com.pos.petra.app.Views.TypefacedTextView
+                                                android:id="@+id/edt_pin"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:textColor="@color/ink_blue"
+                                                android:textSize="@dimen/normal_text"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/size_20"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_marginBottom="@dimen/size_5"
+                                            android:layout_weight="1"
+                                            app:cardCornerRadius="@dimen/margin_d">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <com.pos.petra.app.Views.TypefacedButton
+                                                    android:id="@+id/btn_proceed"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@color/dark_green"
+                                                    android:gravity="center"
+                                                    android:imeOptions="actionDone"
+                                                    android:padding="@dimen/size_5"
+                                                    android:text="Proceed to Checkout"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="@dimen/normal_text"
+
+                                                    />
+                                            </LinearLayout>
+                                        </android.support.v7.widget.CardView>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
 
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_margin="@dimen/size_10"
                         app:cardCornerRadius="@dimen/size_10">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/grey_white"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
                             android:orientation="vertical"
-                            android:padding="@dimen/size_20">
+                            android:paddingLeft="@dimen/size_20"
+                            android:paddingTop="@dimen/size_5"
+                            android:paddingRight="@dimen/size_20">
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/gv_numpad"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="24dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dip"
+                                android:stretchMode="columnWidth"
+                                android:verticalSpacing="0dip"></android.support.v7.widget.RecyclerView>
 
                             <LinearLayout
+                                android:id="@+id/ly_no_records"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
 
-                                <com.yagna.petra.app.views.TypefacedTextView
-                                    android:id="@+id/txt_subtotal"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/normal_text"
-                                    android:textStyle="bold" />
-
-                                <com.yagna.petra.app.views.TypefacedTextView
-                                    android:id="@+id/edt_pin"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:textColor="@color/red"
-                                    android:textSize="@dimen/normal_text"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <android.support.v7.widget.CardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/size_10"
-                                android:layout_weight="1"
-                                android:layout_marginBottom="@dimen/size_10"
-
-                                app:cardCornerRadius="@dimen/card_radious_btn">
-
-                                <LinearLayout
+                                <com.pos.petra.app.Views.TypefacedTextView
+                                    android:id="@+id/tv_no_record_"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:text="No items in Cart"
+                                    android:textSize="25sp" />
 
-                                    <com.yagna.petra.app.views.TypefacedButton
-                                        android:id="@+id/btn_proceed"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:background="@color/green"
-                                        android:gravity="center"
-                                        android:imeOptions="actionDone"
-                                        android:text="Proceed to Checkout"
-                                        android:textAllCaps="false"
-                                        android:textColor="@color/white"
-                                        android:textSize="@dimen/normal_text"
+                                <com.pos.petra.app.Views.TypefacedTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Tap '+' icon below to add items"
+                                    android:textColor="@color/dark_grey"
+                                    android:textSize="25sp" />
 
-                                        />
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                                <android.support.design.widget.FloatingActionButton
+                                    android:id="@+id/fab_add_center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="16dp"
+                                    android:backgroundTint="@color/dark_blue"
+                                    android:src="@drawable/ic_btn_add" />
+                            </LinearLayout>
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="@dimen/size_5"
-                        android:gravity="center"
-                        android:orientation="vertical">
 
 
 
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/gv_numpad"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginBottom="24dp"
-                            android:gravity="center"
-                            android:horizontalSpacing="0dip"
-                            android:stretchMode="columnWidth"
-                            android:verticalSpacing="0dip"></android.support.v7.widget.RecyclerView>
 
-                        <com.yagna.petra.app.views.TypefacedTextView
-                            android:id="@+id/tv_no_record_"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:background="#75ffffff"
-                            android:gravity="center"
-                            android:text="No items in Cart"
-                            android:textSize="25sp"
-                            android:visibility="gone" />
-                    </LinearLayout>
-                </LinearLayout>
+
             </LinearLayout>
             </ScrollView>
 
@@ -170,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedButton
+                    <com.pos.petra.app.Views.TypefacedButton
                         android:id="@+id/btn_enter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -197,7 +291,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedButton
+                    <com.pos.petra.app.Views.TypefacedButton
                         android:id="@+id/btn_today_trans"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

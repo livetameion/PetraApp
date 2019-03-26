@@ -23,7 +23,7 @@
             android:divider="@android:color/transparent"
             android:dividerHeight="6dp"
             />
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

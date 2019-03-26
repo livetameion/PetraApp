@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yagna.petra.app">
+    package="com.pos.petra.app">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -22,15 +36,7 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".Cashier.CashierActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".Payment.PaymentActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".Admin.AdminListActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -47,124 +53,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
-            android:name=".Admin.Transaction.TransactionSingleViewActivity"
+            android:name=".AdvancedTransaction.TransactionDetailsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Admin.AdminListActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Admin.AdminListActivity" />
+
         </activity>
+
         <activity
-            android:name=".Admin.Transaction.TransactionDetailsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Admin.AdminListActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Admin.AdminListActivity" />
-        </activity>
-        <activity
-            android:name=".Admin.Users.UserDetailsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Admin.AdminListActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Admin.AdminListActivity" />
-        </activity>
-        <activity
-            android:name=".Admin.Users.UserAddActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Admin.AdminListActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Admin.AdminListActivity" />
-        </activity>
-        <activity
-            android:name=".Cashier.TransactionListActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Cashier.CashierActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Cashier.CashierActivity" />
-        </activity>
-        <activity
-            android:name=".Cashier.TransactionDetailsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".Cashier.TransactionListActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yagna.petra.app.Cashier.TransactionListActivity" />
-        </activity>
-        <activity
-            android:name=".Product.ActionListActivity"
+            android:name=".Admin.Product.Modifer.ModifierActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity
-            android:name=".Product.Category.CategoryActivity"
+            android:name=".Admin.Product.Discount.DiscountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity android:name=".ImageCropper.ImageCropActivity" />
+        <activity
+            android:name=".AdvancedCashier.CashierDashboardActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity
-            android:name=".Product.SubCategory.SubCategoryActivity"
+            android:name=".AdvancedCashier.BrowseAndSearch.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name=".AdvancedCashier.Discount.DiscountActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity
-            android:name=".Product.Product.ProductActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".Product.Modifer.ModifierActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".Product.Discount.DiscountActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity android:name=".Cropper.ImageCropActivity" />
-        <activity
-            android:name=".AdvncedCashier.AdvCashierActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".AdvncedCashier.Search.SearchActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".AdvncedCashier.SubCategory.SubCategoryActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".AdvncedCashier.Product.ProductActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".AdvncedCashier.Discount.DiscountActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-        <activity
-            android:name=".AdvncedCashier.Modifer.ModifierActivity"
+            android:name=".AdvancedCashier.Modifer.ModifierActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
@@ -174,32 +101,49 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity
-            android:name=".AdvncedCashier.Product.ProductDetailActivity"
+            android:name=".AdvancedCashier.Product.ProductDetailActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme"></activity>
         <activity
-            android:name=".Cashier.AdvTransactionListActivity"
+            android:name=".AdvancedTransaction.AdvTransactionListActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".AdvncedCashier.AdvCashierActivity"
+            android:parentActivityName=".AdvancedCashier.CashierDashboardActivity"
             android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
 
-        <activity
-            android:name=".AdvncedCashier.Search.ProductSingleViewActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-
-        </activity>
         <activity
             android:name=".Customer.CustomerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:parentActivityName=".AdvncedCashier.AdvCashierActivity"
+            android:parentActivityName=".AdvancedCashier.CashierDashboardActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden">
 
         </activity>
+        <activity
+            android:name=".Admin.Product.ProductDashboard.ProductDashboardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".Admin.Product.ProductDashboard.ProductSingleViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".Admin.Product.ProductDetail.ProductDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!--  <provider
+              android:name=".GenericFileProvider"
+              android:authorities="com.yagna.petra.app.provider"
+              android:exported="false"
+              android:grantUriPermissions="true">
+              <meta-data
+                  android:name="android.support.FILE_PROVIDER_PATHS"
+                  android:resource="@xml/provider_paths"/>
+          </provider>-->
     </application>
 
 </manifest>

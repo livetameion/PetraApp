@@ -46,7 +46,7 @@
                     android:paddingRight="@dimen/margin_a"
                     android:background="@color/grey"
                     android:gravity="center_vertical">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/login_now"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                                 android:layout_marginBottom="@dimen/margin_a"
                                 android:orientation="horizontal">
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/margin_a"
@@ -138,7 +138,7 @@
                                     android:textSize="@dimen/normal_text"
                                     android:textStyle="bold" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:id="@+id/txt_cur_credit"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -167,7 +167,7 @@
                                     android:background="@color/light_blue"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedButton
+                                    <com.pos.petra.app.Views.TypefacedButton
                                         android:id="@+id/btn_store_credit"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -196,7 +196,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/margin_a"
@@ -216,7 +216,7 @@
                             android:layout_marginTop="@dimen/margin_a"
                             android:orientation="horizontal">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="@dimen/margin_a"
@@ -226,7 +226,7 @@
                                 android:textColor="@color/dark_grey"
                                 android:textStyle="bold" />
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:id="@+id/txt_points"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -245,7 +245,7 @@
                             android:layout_marginTop="@dimen/margin_a"
                             android:orientation="horizontal">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="@dimen/margin_a"
@@ -254,7 +254,7 @@
                                 android:textColor="@color/dark_grey"
                                 android:textStyle="bold" />
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:id="@+id/txt_canpurchase"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                                     android:orientation="horizontal"
                                     android:padding="@dimen/margin_a">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center_horizontal"
@@ -325,7 +325,7 @@
                                     android:orientation="horizontal"
                                     android:padding="@dimen/margin_a">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center_horizontal"
@@ -356,7 +356,7 @@
                                     android:padding="1dp"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedEditText
+                                    <com.pos.petra.app.Views.TypefacedEditText
                                         android:id="@+id/edt_token"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
@@ -382,7 +382,7 @@
                             android:layout_marginLeft="@dimen/margin_a"
                             android:orientation="horizontal">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:id="@+id/txt_token_rate"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -442,7 +442,7 @@
                                 android:paddingRight="@dimen/margin_a"
                                 android:visibility="visible">
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/margin_b"
@@ -476,7 +476,7 @@
                                             android:gravity="center_vertical"
                                             android:padding="3dp">
 
-                                            <com.yagna.petra.app.views.TypefacedTextView
+                                            <com.pos.petra.app.Views.TypefacedTextView
                                                 android:id="@+id/btn_login"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -498,7 +498,7 @@
                                     </android.support.v7.widget.CardView>
 
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="right|center_vertical"
@@ -523,7 +523,7 @@
                                     android:layout_margin="@dimen/margin_a"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Original Total"
@@ -531,7 +531,7 @@
 
                                         android:textColor="@color/dark_grey" />
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:id="@+id/txt_org_total"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -558,7 +558,7 @@
                                             android:paddingLeft="@dimen/margin_b"
                                             android:paddingRight="@dimen/margin_b">
 
-                                            <com.yagna.petra.app.views.TypefacedTextView
+                                            <com.pos.petra.app.Views.TypefacedTextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="center_horizontal"
@@ -579,7 +579,7 @@
                                     android:layout_marginRight="@dimen/margin_a"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:id="@+id/txt_token_credit_store"
                                         android:layout_width="wrap_content"
                                         android:textSize="@dimen/normal_text"
@@ -587,7 +587,7 @@
                                         android:text="100 credit store @ : "
                                         android:textColor="@color/dark_grey" />
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:id="@+id/txt_token_price"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -612,7 +612,7 @@
                                             android:background="@color/orange"
                                             android:orientation="horizontal">
 
-                                            <com.yagna.petra.app.views.TypefacedTextView
+                                            <com.pos.petra.app.Views.TypefacedTextView
                                                 android:id="@+id/btn_delete_applied"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -644,14 +644,14 @@
                                     android:layout_marginRight="@dimen/margin_a"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:textSize="@dimen/normal_text"
                                         android:text="Subtotal"
                                         android:textColor="@color/dark_grey" />
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:id="@+id/txt_subtotal"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -676,7 +676,7 @@
                                             android:background="@color/orange"
                                             android:orientation="horizontal">
 
-                                            <com.yagna.petra.app.views.TypefacedTextView
+                                            <com.pos.petra.app.Views.TypefacedTextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="center_horizontal"
@@ -699,14 +699,14 @@
                                     android:layout_marginRight="@dimen/margin_a"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:textSize="@dimen/normal_text"
                                         android:text="Inserted Store Credit"
                                         android:textColor="@color/dark_grey" />
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:id="@+id/txt_applied_sotr_credit"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -730,7 +730,7 @@
                                             android:background="@color/orange"
                                             android:orientation="horizontal">
 
-                                            <com.yagna.petra.app.views.TypefacedTextView
+                                            <com.pos.petra.app.Views.TypefacedTextView
                                                 android:id="@+id/btn_delete_store_credit"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -761,7 +761,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/margin_b"
@@ -770,7 +770,7 @@
                                     android:textColor="@color/dark_blue"
                                     android:textSize="@dimen/normal_text" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:id="@+id/txt_amount"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -796,7 +796,7 @@
                                         android:background="@color/orange"
                                         android:orientation="horizontal">
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <com.pos.petra.app.Views.TypefacedTextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_horizontal"
@@ -848,7 +848,7 @@
                                     android:layout_height="match_parent"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedButton
+                                    <com.pos.petra.app.Views.TypefacedButton
                                         android:id="@+id/btn_continue_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -879,7 +879,7 @@
                                     android:background="@color/white"
                                     android:orientation="horizontal">
 
-                                    <com.yagna.petra.app.views.TypefacedButton
+                                    <com.pos.petra.app.Views.TypefacedButton
                                         android:id="@+id/btn_cancel_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -920,7 +920,7 @@
                                 android:layout_height="match_parent"
                                 android:orientation="horizontal">
 
-                                <com.yagna.petra.app.views.TypefacedButton
+                                <com.pos.petra.app.Views.TypefacedButton
                                     android:id="@+id/btn_continue"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -950,7 +950,7 @@
                                 android:background="@color/white"
                                 android:orientation="horizontal">
 
-                                <com.yagna.petra.app.views.TypefacedButton
+                                <com.pos.petra.app.Views.TypefacedButton
                                     android:id="@+id/btn_cancel"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"

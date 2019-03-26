@@ -29,109 +29,81 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:padding="12dp">
-
-                <ImageView
-                    android:id="@+id/img_product"
-                    android:layout_width="@dimen/size_200"
-                    android:layout_height="@dimen/size_200"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="@dimen/size_10"
-                    android:scaleType="centerInside"
-                    android:visibility="gone" />
-
                 <LinearLayout
-                    android:id="@+id/rd_wrapper"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                   android:layout_margin="@dimen/size_10"
-                    android:layout_toRightOf="@+id/img_btn_edit"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:padding="@dimen/size_5">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
-                        android:id="@+id/rd_header_text"
+                    <ImageView
+                        android:id="@+id/img_product"
+                        android:layout_width="@dimen/size_200"
+                        android:layout_height="@dimen/size_200"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/size_10"
+                        android:scaleType="centerInside"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/rd_wrapper"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:text="Header"
-                        android:textColor="@color/ink_blue"
-                        android:textSize="@dimen/normal_text"
-                        android:textStyle="bold" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/size_10"
+                        android:layout_toRightOf="@+id/img_btn_edit"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
-                        android:id="@+id/rd_sub_header_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:text="Sub Header"
-                        android:textColor="@color/red"
-                        android:textSize="@dimen/normal_text"
-                        android:visibility="visible" />
+                        <com.pos.petra.app.Views.TypefacedTextView
+                            android:id="@+id/rd_header_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Header"
+                            android:textColor="@color/ink_blue"
+                            android:textSize="@dimen/normal_text"
+                            android:textStyle="bold" />
+
+                        <com.pos.petra.app.Views.TypefacedTextView
+                            android:id="@+id/rd_sub_header_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Sub Header"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/normal_text"
+                            android:visibility="visible" />
 
 
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cb_chcek"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
-
-                <android.support.v7.widget.AppCompatCheckBox
-                    android:id="@+id/cb_chcek"
-                    android:layout_width="wrap_content"
-                    android:visibility="gone"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
 
                 <ImageView
                     android:id="@+id/arrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
                     android:visibility="visible"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_right_shift" />
 
-                <android.support.v7.widget.CardView
+                <ImageView
                     android:id="@+id/cv_add"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_vertical"
-                    android:layout_marginTop="5dp"
-                    android:visibility="gone"
-                    android:layout_marginRight="@dimen/margin_a"
-                    android:layout_marginBottom="5dp"
-                    app:cardCornerRadius="15dp">
+                    android:layout_width="@dimen/margin_f"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_30"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:src="@mipmap/dots"/>
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/dark_blue"
-                        android:paddingLeft="@dimen/margin_a"
-                        android:paddingTop="@dimen/size_5"
-                        android:paddingRight="@dimen/margin_a"
-                        android:paddingBottom="@dimen/size_5">
-
-                        <com.yagna.petra.app.views.TypefacedTextView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@color/dark_blue"
-                            android:paddingLeft="@dimen/size_20"
-                            android:paddingRight="@dimen/size_20"
-                            android:text="Add"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/normal_text" />
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_below="@id/app_bar"
-                            android:layout_centerInParent="true"
-                            android:layout_marginRight="@dimen/margin_a"
-                            android:src="@drawable/ic_btn_add" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
 
                 <ImageView
                     android:id="@+id/img_btn_edit"
@@ -152,11 +124,17 @@
                     android:layout_centerVertical="true"
                     android:layout_marginTop="3dp"
                     android:src="@drawable/delete_icon"
-
                     android:visibility="gone" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"
+                android:paddingTop="@dimen/size_5"
+                android:layout_marginLeft="12dp"
+                android:paddingBottom="@dimen/size_5"/>
             <android.support.v7.widget.RecyclerView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginLeft="@dimen/size_10"
                 android:layout_height="wrap_content"
                 android:id="@+id/rv_sub_list">

@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -34,7 +34,7 @@
                     android:textStyle="bold"
                     android:textSize="@dimen/text_title" />
 
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/msg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -68,12 +68,12 @@
                         android:onClick="myClickMethod"
                         android:id="@+id/btn_cancel"
                         android:textSize="@dimen/text_title" />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:background="@color/dark_grey"
                         />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/btn_ok"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

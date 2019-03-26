@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Products"
@@ -27,7 +27,7 @@
         android:verticalSpacing="0dp"
         android:focusable="true"
         android:clickable="true"></GridView>
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="right"

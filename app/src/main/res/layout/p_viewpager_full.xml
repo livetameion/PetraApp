@@ -32,7 +32,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="11dp" />
         </RelativeLayout>
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

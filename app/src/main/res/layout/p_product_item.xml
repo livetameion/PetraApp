@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/rd_header_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                         android:textSize="@dimen/normal_text"
                         android:textStyle="bold"
                         android:maxLines="1"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/rd_header_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                         android:textStyle="bold"
                         android:maxLines="1"/>
                 </LinearLayout>
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/rd_sub_header_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/margin_a"
+                android:id="@+id/cv_extra"
                 android:visibility="invisible"
                 app:cardCornerRadius="@dimen/margin_e">
                 <LinearLayout
@@ -88,7 +89,7 @@
                     android:orientation="horizontal"
                     android:paddingLeft="@dimen/margin_b"
                     android:paddingRight="@dimen/margin_b">
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"

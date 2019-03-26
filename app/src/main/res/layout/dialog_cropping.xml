@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:layout_gravity="center">
-        <com.yagna.petra.app.Cropper.CropImageView
+        <com.pos.petra.app.ImageCropper.CropImageView
             android:id="@+id/CropImageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

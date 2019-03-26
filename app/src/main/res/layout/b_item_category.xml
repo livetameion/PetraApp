@@ -39,7 +39,7 @@
                     >
 
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -55,7 +55,7 @@
                         android:paddingRight="30dp"
                         android:drawablePadding="5dp"
                         android:hint="SubCategory Name :"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/sub_categ_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                     >
 
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -102,7 +102,7 @@
                         android:paddingRight="30dp"
                         android:drawablePadding="5dp"
                         android:hint="Category Name :"/>
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/text"
@@ -138,7 +138,7 @@
                     android:paddingRight="30dp"
                     android:drawablePadding="5dp"
                     android:hint="Category Code:"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/p_code"
                     android:layout_width="match_parent"
                     style="@style/text"
@@ -155,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/text"
@@ -171,7 +171,7 @@
                     android:paddingRight="30dp"
                     android:drawablePadding="5dp"
                     android:hint="Description :"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/product_desc"
                     android:layout_width="match_parent"
                     style="@style/text"

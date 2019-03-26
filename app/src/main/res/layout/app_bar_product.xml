@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/black"
+            android:textSize="@dimen/normal_text"
+            android:theme="@style/AppThem"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/petra"
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/margin_f"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@mipmap/petra"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_a"
+                android:id="@+id/logout"
+                app:cardCornerRadius="@dimen/card_radious_btn">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_a"
+                    android:background="@color/grey_white"
+                    android:gravity="center_vertical">
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:id="@+id/login_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logout"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/size_20"
+                        android:paddingRight="@dimen/size_20"
+                        />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/logut"
+                        android:layout_marginRight="@dimen/margin_a"
+                        android:layout_below="@id/app_bar"
+                        android:layout_centerInParent="true"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/acivity_frag_single_view" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

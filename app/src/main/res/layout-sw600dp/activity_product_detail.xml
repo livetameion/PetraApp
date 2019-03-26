@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ripple"
+    android:background="@color/white"
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical">
@@ -12,17 +12,21 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text"
+            android:theme="@style/AppThem"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:theme="@style/ToolbarColoredBackArrow">
+            app:titleTextColor="@color/black">
 
-            <com.yagna.petra.app.views.TypefacedTextView
+
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/txt_branchtitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -33,11 +37,15 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
+
     <LinearLayout
         android:id="@+id/ly_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,27 +63,6 @@
                 android:layout_toRightOf="@+id/img_btn_edit"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-
-                <com.yagna.petra.app.views.TypefacedTextView
-                    android:id="@+id/rd_header_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:text="Header"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/normal_text"
-                    android:textStyle="bold" />
-
-                <com.yagna.petra.app.views.TypefacedTextView
-                    android:id="@+id/rd_header_brand"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:text="Header"
-                    android:textColor="@color/ink_blue"
-                    android:textSize="@dimen/normal_text"
-                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,33 +85,54 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
+                        <com.pos.petra.app.Views.TypefacedTextView
+                            android:id="@+id/rd_header_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Header"
+                            android:textColor="@color/radium"
+                            android:textSize="@dimen/normal_text"
+                            android:textStyle="bold" />
+
+                        <com.pos.petra.app.Views.TypefacedTextView
+                            android:id="@+id/rd_header_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Header"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_text"
+                            android:textStyle="bold" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Price: "
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/normal_text" />
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:id="@+id/txt_price"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:maxLines="1"
                                 android:text="$0.00"
-                                android:textColor="@color/red"
+                                android:textColor="@color/black"
                                 android:textSize="@dimen/normal_text" />
                         </LinearLayout>
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                            <com.yagna.petra.app.views.TypefacedTextView
+                            <com.pos.petra.app.Views.TypefacedTextView
                                 android:id="@+id/product_nondisc_price"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -133,7 +141,15 @@
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/normal_text" />
 
-                        </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/rl_product_disc_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="-8.5dp"
+                                android:background="@color/black"
+                                android:visibility="gone" />
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -154,13 +170,15 @@
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_gravity="center"
-                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@mipmap/discount"
                                     android:gravity="center"
                                     android:padding="10dp"
                                     android:textSize="25sp" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -168,7 +186,7 @@
                                     android:textColor="@color/ink_blue"
                                     android:textSize="@dimen/normal_text" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:id="@+id/txt_discount_count"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -177,14 +195,15 @@
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/normal_text" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <ImageView
                                     android:id="@+id/txt_remove_disc"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="@dimen/size_20"
+                                    android:layout_height="@dimen/size_20"
                                     android:layout_gravity="center_vertical"
-                                    android:text="  (Remove Discount) "
-                                    android:textColor="@color/red"
-                                    android:textSize="@dimen/normal_text"
+                                    android:layout_marginLeft="@dimen/size_5"
+                                    android:background="@drawable/circle_back_red"
+                                    android:padding="3dp"
+                                    android:src="@drawable/ic_close"
                                     android:visibility="gone" />
 
 
@@ -193,27 +212,26 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/size_10"
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
                                     android:text="In Stock"
-                                    android:textColor="@color/dark_green"
+                                    android:textColor="@color/dark_grey"
                                     android:textSize="@dimen/normal_text"
                                     android:textStyle="bold" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:id="@+id/txt_stock_count"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
                                     android:text=" (0)"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/dark_grey"
                                     android:textSize="@dimen/normal_text" />
 
                             </LinearLayout>
@@ -223,7 +241,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-                                android:layout_marginLeft="@dimen/size_5"
                                 android:layout_marginTop="@dimen/size_10"
                                 android:layout_weight="1"
                                 android:background="@color/orange"
@@ -239,8 +256,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:background="@color/grey"
-                                        android:padding="@dimen/size_10"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:paddingRight="@dimen/size_10"
+                                        android:paddingLeft="@dimen/size_10">
 
                                         <Button
                                             android:layout_width="30dp"
@@ -250,10 +268,10 @@
                                             android:background="@mipmap/equalizer"
                                             android:gravity="center"
                                             android:padding="10dp"
-                                            android:visibility="gone"
-                                            android:textSize="25sp" />
+                                            android:textSize="25sp"
+                                            android:visibility="gone" />
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <com.pos.petra.app.Views.TypefacedTextView
                                             android:id="@+id/txt_modif_type"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
@@ -262,59 +280,60 @@
                                             android:textColor="@color/ink_blue"
                                             android:textSize="@dimen/normal_text" />
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <com.pos.petra.app.Views.TypefacedTextView
                                             android:id="@+id/txt_modif_count"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
-                                            android:text=" (0)"
+                                            android:text=" (0)  "
                                             android:textColor="@color/black"
-                                            android:textSize="@dimen/normal_text"/>
+                                            android:textSize="@dimen/normal_text" />
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <ImageView
                                             android:id="@+id/txt_remove_modif"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
+                                            android:layout_width="@dimen/size_20"
+                                            android:layout_height="@dimen/size_20"
                                             android:layout_gravity="center_vertical"
-                                            android:text="  (Remove Modifier)"
-                                            android:textColor="@color/red"
-                                            android:textSize="@dimen/normal_text"/>
+                                            android:layout_marginLeft="@dimen/size_5"
+                                            android:background="@drawable/circle_back_red"
+                                            android:padding="3dp"
+                                            android:src="@drawable/ic_close"
+                                            android:visibility="gone" />
                                     </LinearLayout>
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:background="@color/grey"
-                                        android:paddingLeft="@dimen/size_10"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:paddingLeft="@dimen/size_10">
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <com.pos.petra.app.Views.TypefacedTextView
                                             android:id="@+id/txt_modif_name"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
-                                            android:text="Color"
                                             android:layout_weight="1"
+                                            android:text="Color"
                                             android:textColor="@color/black"
                                             android:textSize="@dimen/normal_text" />
 
-                                        <com.yagna.petra.app.views.TypefacedTextView
+                                        <com.pos.petra.app.Views.TypefacedTextView
                                             android:id="@+id/txt_modif_stock"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
                                             android:layout_weight="1"
                                             android:text=" (0)"
-                                            android:visibility="gone"
                                             android:textColor="@color/black"
-                                            android:textSize="@dimen/normal_text" />
+                                            android:textSize="@dimen/normal_text"
+                                            android:visibility="gone" />
 
                                         <ImageView
                                             android:id="@+id/img_modif"
                                             android:layout_width="@dimen/size_70"
                                             android:layout_height="@dimen/size_70"
                                             android:layout_gravity="center"
-                                            android:layout_margin="@dimen/size_10"
                                             android:gravity="center"
                                             android:padding="10dp"
                                             android:textSize="25sp" />
@@ -340,9 +359,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="right"
+                                android:layout_marginTop="@dimen/size_10"
                                 android:orientation="horizontal">
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -351,20 +371,18 @@
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/normal_text" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <ImageView
                                     android:id="@+id/minus"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="@dimen/size_25"
+                                    android:layout_height="@dimen/size_25"
                                     android:layout_gravity="center"
-                                    android:layout_margin="10dp"
+                                    android:layout_marginRight="@dimen/size_10"
+                                    android:background="@drawable/circle_back_black"
                                     android:gravity="center"
-                                    android:padding="3dp"
-                                    android:text="-"
-                                    android:textColor="@color/dark_blue"
-                                    android:textSize="25dp"
-                                    android:textStyle="bold" />
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_minus" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <com.pos.petra.app.Views.TypefacedTextView
                                     android:id="@+id/edt_qty"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -379,18 +397,18 @@
                                     android:textColor="@color/ink_blue"
                                     android:textSize="20dp" />
 
-                                <com.yagna.petra.app.views.TypefacedTextView
+                                <ImageView
                                     android:id="@+id/plus"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="@dimen/size_25"
+                                    android:layout_height="@dimen/size_25"
                                     android:layout_gravity="center"
-                                    android:layout_margin="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/circle_back_black"
                                     android:gravity="center"
                                     android:padding="3dp"
-                                    android:text="+"
-                                    android:textColor="@color/dark_blue"
-                                    android:textSize="25dp"
-                                    android:textStyle="bold" />
+                                    android:src="@drawable/ic_btn_add"
+                                    android:text="+" />
                             </LinearLayout>
 
                             <android.support.v7.widget.CardView
@@ -414,14 +432,15 @@
                                     android:paddingBottom="@dimen/size_5">
 
                                     <ImageView
-                                        android:layout_width="@dimen/size_50"
-                                        android:layout_height="@dimen/size_50"
+                                        android:layout_width="@dimen/size_30"
+                                        android:layout_height="@dimen/size_30"
                                         android:layout_below="@id/app_bar"
                                         android:layout_centerInParent="true"
                                         android:layout_marginRight="@dimen/margin_a"
+                                        android:layout_marginLeft="@dimen/size_10"
                                         android:src="@drawable/ic_btn_cart" />
 
-                                    <com.yagna.petra.app.views.TypefacedTextView
+                                    <com.pos.petra.app.Views.TypefacedTextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:background="@color/dark_blue"
@@ -443,7 +462,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/size_10"
@@ -453,7 +472,7 @@
                         android:textSize="@dimen/normal_text"
                         android:textStyle="bold" />
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_desc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -462,10 +481,11 @@
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:gravity="left|center_vertical"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/dark_grey"
                         android:textSize="@dimen/normal_text" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </LinearLayout>

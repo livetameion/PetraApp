@@ -14,7 +14,7 @@
         android:gravity="left"
         android:id="@+id/ly_item"
         android:layout_marginBottom="10dp">
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Merchant"
@@ -24,7 +24,7 @@
             android:textSize="@dimen/normal_text"
             android:gravity="left" />
 
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Industry"
@@ -36,7 +36,7 @@
             android:gravity="left"
             />
 
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Store Credit"

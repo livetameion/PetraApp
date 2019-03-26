@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/black"
+            android:textSize="@dimen/normal_text"
+            android:theme="@style/AppThem"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <com.pos.petra.app.Views.TypefacedTextView
+                android:id="@+id/txt_branchtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Product Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:background="@android:color/transparent">
+                <ImageView
+                    android:id="@+id/edit_"
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/size_5"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/circle_back_grey"
+                    android:src="@mipmap/pencil"/>
+                <ImageView
+                    android:id="@+id/delete_"
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:background="@drawable/circle_back_grey"
+                    android:src="@mipmap/delete_blue"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          android:padding="@dimen/size_20"
+          android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/p_img"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/petra"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:background="@android:color/transparent"
+                    >
+
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/txt_titlepname"
+                        style="@style/text"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/white"
+                        android:imeOptions="actionDone"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="30dp"
+                        android:drawablePadding="5dp"
+                        android:hint="Product Name :"/>
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        style="@style/text"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="vertical">
+                            <com.pos.petra.app.Views.TypefacedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:focusable="true"
+                                android:layout_margin="5dp"
+                                android:id="@+id/txt_title_code"
+                                style="@style/text"
+                                android:focusableInTouchMode="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:backgroundTint="@color/white"
+                                android:imeOptions="actionDone"
+                                android:gravity="left|center_vertical"
+                                android:paddingRight="30dp"
+                                android:drawablePadding="5dp"
+                                android:hint="Product Code :"/>
+                            <com.pos.petra.app.Views.TypefacedTextView
+                                android:id="@+id/product_sku"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center_vertical"
+                                android:layout_weight="1"
+                                style="@style/text"
+                                android:focusable="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:focusableInTouchMode="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:orientation="vertical">
+
+
+                            <com.pos.petra.app.Views.TypefacedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:focusable="true"
+                                style="@style/text"
+                                android:layout_margin="5dp"
+                                android:focusableInTouchMode="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:backgroundTint="@color/white"
+                                android:imeOptions="actionDone"
+                                android:gravity="left|center_vertical"
+                                android:paddingRight="30dp"
+                                android:drawablePadding="5dp"
+                                android:id="@+id/txt_titlepcode"
+                                android:hint="Stock :"/>
+                            <com.pos.petra.app.Views.TypefacedTextView
+                                android:id="@+id/p_stock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center_vertical"
+                                style="@style/text"
+                                android:layout_weight="1"
+                                android:focusable="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:focusableInTouchMode="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                />
+                        </LinearLayout>
+
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/txt_titleprice"
+                        style="@style/text"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/white"
+                        android:imeOptions="actionDone"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="30dp"
+                        android:drawablePadding="5dp"
+                        android:hint="Price :"/>
+                    <com.pos.petra.app.Views.TypefacedTextView
+                        android:id="@+id/product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="left"
+                        android:gravity="right"
+                        android:background="@android:color/transparent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/size_5"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/modifier"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:layout_margin="5dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/equalizer"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/ink_blue"
+                                android:layout_gravity="center_vertical"
+
+                                android:text="Add Modifier"/>
+                            <TextView
+                                android:id="@+id/txt_add_modif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_vertical"
+
+                                android:text=" (0)"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/discount"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/discount"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/ink_blue"
+                                android:layout_gravity="center_vertical"
+                                android:text="Apply Discount"/>
+                            <TextView
+                                android:id="@+id/txt_add_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_vertical"
+                                android:text=" (0)"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.pos.petra.app.Views.TypefacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text"
+                    android:id="@+id/txt_titledescription"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:layout_margin="5dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/white"
+                    android:imeOptions="actionDone"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="30dp"
+                    android:drawablePadding="5dp"
+                    android:hint="Description :"/>
+                <com.pos.petra.app.Views.TypefacedTextView
+                    android:id="@+id/product_desc"
+                    android:layout_width="match_parent"
+                    style="@style/text"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:focusable="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+      </ScrollView>
+
+</LinearLayout>

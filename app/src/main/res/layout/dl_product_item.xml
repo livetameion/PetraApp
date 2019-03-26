@@ -15,14 +15,14 @@
         android:layout_marginTop="@dimen/size_5"
         android:background="@color/white"
         android:orientation="horizontal">
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:id="@+id/rd_header_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Original Price"
             android:textColor="@color/dark_grey"
             android:textSize="@dimen/normal_text" />
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:id="@+id/rd_header_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

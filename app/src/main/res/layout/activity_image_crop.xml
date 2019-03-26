@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000">
-    <com.yagna.petra.app.Cropper.CropImageView
+    <com.pos.petra.app.ImageCropper.CropImageView
         android:id="@+id/xIvCropView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,7 +28,7 @@
             android:background="#000000"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/xBtnCropCancel"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
@@ -45,7 +45,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF" />
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/xBtnCropOk"
                 android:layout_width="0dp"
                 android:layout_height="45dp"

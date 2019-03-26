@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".AdvncedCashier.Search.SearchActivity"
+    tools:context=".AdvancedCashier.BrowseAndSearch.SearchActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@color/transparency_color">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="All"
@@ -34,7 +34,13 @@
                 android:layout_marginTop="16dp"
                 android:paddingLeft="@dimen/size_10"
                 />
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"
+                android:paddingTop="@dimen/size_10"
+                android:layout_marginLeft="17dp"
+                android:paddingBottom="@dimen/size_5"/>
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -52,7 +58,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:visibility="gone"
-                    android:src="@drawable/ic_btn_addto_cart"
+                    app:backgroundTint="@color/dark_blue"
+                    android:src="@mipmap/shopping_cart"
                     android:layout_margin="16dp" />
             </RelativeLayout>
 

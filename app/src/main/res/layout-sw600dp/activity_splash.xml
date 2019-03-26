@@ -21,7 +21,7 @@
       android:orientation="vertical"
       android:layout_marginTop="@dimen/margin_e"
       android:gravity="center_horizontal">
-    <com.yagna.petra.app.Util.ProgressBarCircularIndeterminate
+    <com.pos.petra.app.Util.ProgressBarCircularIndeterminate
         android:id="@+id/progressBar"
         android:layout_width="28dp"
         android:layout_height="28dp"
@@ -41,7 +41,7 @@
         app:rcProgressColor="@color/dark_blue"
         app:rcSecondaryProgressColor="@color/very_light_blue"
         app:rcBackgroundColor="@color/very_light_blue" />
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_a"
         app:cardCornerRadius="25dp">
-  <com.yagna.petra.app.views.TypefacedButton
+  <com.pos.petra.app.Views.TypefacedButton
       android:id="@+id/login_now"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

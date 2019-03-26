@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
@@ -58,7 +58,7 @@
                 android:textStyle="bold"
                 android:textSize="@dimen/text_title" />
 
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
@@ -66,7 +66,7 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_title" />
 
-            <com.yagna.petra.app.views.TypefacedEditText
+            <com.pos.petra.app.Views.TypefacedEditText
                 android:id="@+id/edt_tip"
                 android:layout_width="@dimen/size_300"
                 android:layout_height="match_parent"
@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -95,12 +95,12 @@
                     android:layout_weight="1"
                     android:id="@+id/btn_cancel"
                     android:textSize="@dimen/text_title" />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:background="@color/white"
                     />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/btn_ok"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

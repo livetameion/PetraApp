@@ -8,7 +8,7 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".AdvncedCashier.Search.SearchActivity"
+    tools:context=".AdvancedCashier.BrowseAndSearch.SearchActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@color/transparency_color">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="All"

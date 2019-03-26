@@ -39,5 +39,6 @@
     <dimen name="size_600">600dp</dimen>
     <dimen name="size_400">450dp</dimen>
     <dimen name="card_radious_btn" >25dp</dimen>
+    <dimen name="admin_frag_top_margin">1dp</dimen>
 
 </resources>

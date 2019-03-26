@@ -5,16 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".Product.Product.ProductActivity">
+    tools:context=".Admin.Product.Product.ProductActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/transparent"
         android:gravity="center_vertical"
         android:orientation="vertical">
         <LinearLayout
@@ -22,8 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="@color/grey_white"
             android:visibility="gone" >
-
             <com.cunoraz.tagview.TagView
                 xmlns:tagview="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/tag_group"
@@ -65,7 +65,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_10"
@@ -73,7 +73,7 @@
                         android:text="@string/category"
                         android:textColor="@color/ink_blue"
                         android:textSize="@dimen/normal_text" />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_10"
@@ -89,7 +89,7 @@
                         android:background="@color/white"
                         android:orientation="horizontal">
 
-                        <com.yagna.petra.app.views.TypefacedTextView
+                        <com.pos.petra.app.Views.TypefacedTextView
                             android:id="@+id/spn_category"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                     android:orientation="horizontal"
                     android:visibility="visible">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_10"
@@ -115,7 +115,7 @@
                         android:text="@string/subcategory"
                         android:textColor="@color/ink_blue"
                         android:textSize="@dimen/normal_text" />
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_10"
@@ -131,12 +131,12 @@
                         android:gravity="center_vertical|left"
                         android:orientation="horizontal">
 
-                        <com.yagna.petra.app.views.TypefacedTextView
+                        <com.pos.petra.app.Views.TypefacedTextView
                             android:id="@+id/spn_subcategory"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="left|center_vertical"></com.yagna.petra.app.views.TypefacedTextView>
+                            android:gravity="left|center_vertical"></com.pos.petra.app.Views.TypefacedTextView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -154,7 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -170,7 +170,7 @@
                 android:paddingRight="30dp"
                 android:drawablePadding="5dp"
                 android:hint="Product Code : "/>
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/product_sku"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -204,7 +204,7 @@
                 android:paddingRight="30dp"
                 android:drawablePadding="5dp"
                 android:hint="Product Name :"/>
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:id="@+id/product_nam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -227,10 +227,12 @@
             android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
             android:divider="@android:color/transparent"
             android:dividerHeight="6dp" />
 
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:id="@+id/tv_no_record_"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -246,8 +248,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_btn_addto_cart"
-                android:layout_margin="16dp" />
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/dark_blue"
+                android:src="@mipmap/shopping_cart" />
         </RelativeLayout>
     </LinearLayout>
     <include

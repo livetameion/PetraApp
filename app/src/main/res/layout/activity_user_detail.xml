@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical|left"
@@ -51,7 +51,7 @@
                         android:textSize="@dimen/normal_text" />
 
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_ref_token_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -90,7 +90,7 @@
                         android:textSize="@dimen/normal_text" />
 
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_e_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/txt_vptoken_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -127,7 +127,7 @@
                         android:textSize="@dimen/normal_text" />
 
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_str_phone"
                         android:layout_width="@dimen/size_300"
                         android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="left|center_vertical"
@@ -165,7 +165,7 @@
                         android:textSize="@dimen/normal_text" />
 
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -190,7 +190,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical|left"
@@ -200,7 +200,7 @@
                         android:textSize="@dimen/normal_text" />
 
 
-                    <com.yagna.petra.app.views.TypefacedEditText
+                    <com.pos.petra.app.Views.TypefacedEditText
                         android:id="@+id/edt_pin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -230,7 +230,7 @@
                     android:paddingBottom="@dimen/size_10"
                     android:orientation="horizontal">
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical|left"
@@ -261,7 +261,7 @@
             </LinearLayout>
 
 
-            <com.yagna.petra.app.views.TypefacedButton
+            <com.pos.petra.app.Views.TypefacedButton
                 android:id="@+id/btn_update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

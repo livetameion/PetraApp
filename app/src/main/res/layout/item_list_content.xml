@@ -17,7 +17,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="@dimen/size_10"
         android:src="@mipmap/calci"/>
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:id="@+id/id_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:padding="@dimen/normal_text"
         android:textSize="@dimen/text_title"
         android:textAppearance="?attr/textAppearanceListItem" />
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

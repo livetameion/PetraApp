@@ -13,7 +13,7 @@
         android:scaleType="fitCenter" />
 
 
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/product_price"
@@ -22,7 +22,7 @@
         android:gravity="center_vertical|left"
         android:layout_above="@+id/product_desc" />
 
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/product_desc"
@@ -33,7 +33,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="25dp" />
 
-    <com.yagna.petra.app.views.TypefacedTextView
+    <com.pos.petra.app.Views.TypefacedTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/product_name"

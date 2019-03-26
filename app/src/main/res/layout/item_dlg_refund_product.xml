@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_a"
         android:orientation="horizontal">
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:id="@+id/rd_header_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
             android:textSize="@dimen/normal_text"
             android:layout_weight="1"
             android:text="Refundable Original Price"/>
-        <com.yagna.petra.app.views.TypefacedTextView
+        <com.pos.petra.app.Views.TypefacedTextView
             android:id="@+id/txt_ref_org_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -29,13 +29,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Freedom Choice"
                     android:textSize="@dimen/mintextsize"
                     />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Payment and Rewards"
@@ -64,14 +64,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_a"
                 android:orientation="vertical">
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Powered by"
                     android:textSize="@dimen/mintextsize"
 
                     />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PayAnywhere"

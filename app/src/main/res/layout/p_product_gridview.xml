@@ -22,7 +22,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <com.yagna.petra.app.Util.P_SquareImageView
+            <com.pos.petra.app.Util.P_SquareImageView
                 android:id="@+id/banner_img"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
@@ -33,7 +33,7 @@
                 android:layout_height="match_parent"/>
             </LinearLayout>
 
-                        <com.yagna.petra.app.views.TypefacedTextView
+                        <com.pos.petra.app.Views.TypefacedTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -44,7 +44,7 @@
                             android:textColorHint="@color/colorPrimary"
                             android:hint="..."
                             />
-            <com.yagna.petra.app.views.TypefacedTextView
+            <com.pos.petra.app.Views.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

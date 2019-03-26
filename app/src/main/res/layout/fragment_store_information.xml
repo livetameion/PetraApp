@@ -13,7 +13,9 @@
      <ScrollView
             android:id="@+id/item_detail_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+         android:layout_marginTop="@dimen/admin_frag_top_margin"
+
+         android:layout_height="match_parent">
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
@@ -63,7 +65,7 @@
                      android:background="@color/dark_green"
                      android:orientation="horizontal">
 
-                     <com.yagna.petra.app.views.TypefacedTextView
+                     <com.pos.petra.app.Views.TypefacedTextView
                          android:id="@+id/btn_update"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
@@ -76,8 +78,8 @@
                          android:textSize="@dimen/margin_d" />
 
                      <ImageView
-                         android:layout_width="@dimen/size_30"
-                         android:layout_height="@dimen/size_30"
+                         android:layout_width="@dimen/size_20"
+                         android:layout_height="@dimen/size_20"
                          android:layout_gravity="center_vertical"
                          android:layout_marginRight="@dimen/margin_b"
                          android:src="@mipmap/check" />

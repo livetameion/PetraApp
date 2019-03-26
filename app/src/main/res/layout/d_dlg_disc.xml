@@ -37,7 +37,7 @@
                     >
 
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                         />
 
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_rate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                         />
 
 
-                    <com.yagna.petra.app.views.TypefacedTextView
+                    <com.pos.petra.app.Views.TypefacedTextView
                         android:id="@+id/product_active"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                         android:layout_weight="1"
                         android:gravity="left|center_vertical"
                         android:focusable="true"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:focusableInTouchMode="true"
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/product_desc"
                     android:layout_width="match_parent"
 
@@ -101,7 +101,7 @@
                     android:focusableInTouchMode="true"
                     android:textColor="@color/colorPrimaryDark"
                     />
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -116,7 +116,7 @@
                     android:paddingRight="30dp"
                     android:drawablePadding="5dp"
                     android:hint="Terms &amp; Condition :"/>
-                <com.yagna.petra.app.views.TypefacedTextView
+                <com.pos.petra.app.Views.TypefacedTextView
                     android:id="@+id/product_terms"
                     android:layout_width="match_parent"
 
