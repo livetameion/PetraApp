@@ -44,6 +44,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.pos.petra.app.AdvancedCashier.CashierDashboardActivity;
 import com.pos.petra.app.AdvancedCashier.DataKeeper;
+import com.pos.petra.app.Device.PrintActivity;
 import com.pos.petra.app.GlobalActivity;
 import com.pos.petra.app.Model.Roles.Cashiers;
 import com.pos.petra.app.Model.Roles.Customer;
@@ -64,6 +65,7 @@ import org.json.JSONObject;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
@@ -152,6 +154,10 @@ public class AdvPaymentActivity extends GlobalActivity {
     private DlgProductAdapter dlg_adapter;
     private String charity_id;
     private String charity_name = "";
+    private Map<String, String> voucher;
+    public static ArrayList<String> voucharProdcutString = new ArrayList<>();
+    public static ArrayList<String> voucharString = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -854,7 +860,7 @@ public class AdvPaymentActivity extends GlobalActivity {
 ////////////////////////////-------Dialog Section----------------/////////////////////////////////////
 
     //Kill Payment Activity
-    private void finishPaymentActivity() {
+    public void finishPaymentActivity() {
         Intent intent = new Intent(AdvPaymentActivity.this, CashierDashboardActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -1591,6 +1597,7 @@ public class AdvPaymentActivity extends GlobalActivity {
 
     //Dialog for shoiwng final total of transaction
     private void dialogFinalCheck2(final double amount_final, final String paymethod) {
+        voucharProdcutString.clear();
         finalCheckDialog = new Dialog(AdvPaymentActivity.this, android.R.style.Theme_Black_NoTitleBar);
         LayoutInflater inflater = getLayoutInflater();
         View rowView = (View) inflater.inflate(R.layout.dialog_adv_final_totalcheck, null);
@@ -1598,8 +1605,16 @@ public class AdvPaymentActivity extends GlobalActivity {
         Window window = getWindow();
         window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
         finalCheckDialog.getWindow().setBackgroundDrawableResource(R.color.translucent_black);
+        TypefacedTextView txt_pay_method = rowView.findViewById(R.id.txt_pay_method);
+        txt_pay_method.setText(paymethod);
+        voucharString.add("Transaction No.: "+transaction_id);
+
+        voucharString.add("Paymethod : "+paymethod);
+
         TypefacedTextView txt_pay_org_price = rowView.findViewById(R.id.txt_ref_org_price);
         txt_pay_org_price.setText("$" + String.format("%.2f", amount));
+        voucharString.add("Origninal Price:  $" + String.format("%.2f", amount));
+
 
         TypefacedTextView txt_token_detail = rowView.findViewById(R.id.txt_ref_token_detail);
         TypefacedTextView txt_token = rowView.findViewById(R.id.txt_token);
@@ -1613,51 +1628,40 @@ public class AdvPaymentActivity extends GlobalActivity {
         });
 
         LinearLayout ly_charity = rowView.findViewById(R.id.ly_charity);
-        if (amount_charity > 0)
-            ly_charity.setVisibility(View.VISIBLE);
-        else
-            ly_charity.setVisibility(View.GONE);
-
-        TypefacedTextView txt_charity_amount = rowView.findViewById(R.id.txt_charity_amount);
-        txt_charity_amount.setText("$" + String.format("%.2f", amount_charity));
-
         TypefacedTextView txt_charity_place = rowView.findViewById(R.id.txt_charity_place);
-        txt_charity_place.setText("Charity for " + charity_name);
+
+
+
+
+
+
 
         LinearLayout ly_insert_credit = rowView.findViewById(R.id.ly_insert_credit);
         TypefacedTextView txt_store_credit = rowView.findViewById(R.id.txt_inserted_token);
         txt_store_credit.setText("-$" + String.format("%.2f", applied_store_credit));
 
-        TypefacedTextView txt_pay_method = rowView.findViewById(R.id.txt_pay_method);
-        txt_pay_method.setText(paymethod);
+
         TypefacedTextView txt_you_pay = rowView.findViewById(R.id.txt_you_pay);
 
-        if (cust_type.equalsIgnoreCase(Constants.MERCHANT) && paymethod.equalsIgnoreCase(Constants.PAYMETHOD_EXCHANGE)) {
-            txt_token_detail.setText("Exchange Price");
-            txt_token.setText(Math.round(amount_final) + " Tokens");
-            txt_you_pay.setText(Math.round(amount_final) + " Tokens");
-            ly_insert_credit.setVisibility(View.GONE);
-        } else {
-            if (applied_token > 0) {
-                ly_normal_token.setVisibility(View.VISIBLE);
-                txt_token_detail.setText(txt_token_credit_store.getText().toString());
-                txt_token.setText("$" + String.format("%.2f", Float.parseFloat(tokenPrice) * applied_token));
-            } else {
-                ly_normal_token.setVisibility(View.GONE);
-            }
-            txt_you_pay.setText("$" + String.format("%.2f", amount_final));
-            if (applied_store_credit > 0) {
-                ly_insert_credit.setVisibility(View.VISIBLE);
+        if (amount_charity > 0)
+        {
+            ly_charity.setVisibility(View.VISIBLE);
+            txt_charity_place.setText("Charity for " + charity_name);
+            TypefacedTextView txt_charity_amount = rowView.findViewById(R.id.txt_charity_amount);
+            txt_charity_amount.setText("$" + String.format("%.2f", amount_charity));
+            voucharString.add("Charity for " + charity_name+":   $" + String.format("%.2f", amount_charity));
 
-            } else
-                ly_insert_credit.setVisibility(View.GONE);
         }
+        else
+            ly_charity.setVisibility(View.GONE);
 
         LinearLayout ly_tip = rowView.findViewById(R.id.ly_tip);
         TypefacedTextView txt_tip_amout = rowView.findViewById(R.id.txt_tip_amount);
         if (tipAccepted == 1) {
             ly_tip.setVisibility(View.VISIBLE);
             txt_tip_amout.setText("$" + String.format("%.2f", tipAmount));
+            voucharString.add("Tip " +":  " + "$" +String.format("%.2f", tipAmount));
+
 
         } else
             ly_tip.setVisibility(View.GONE);
@@ -1669,8 +1673,38 @@ public class AdvPaymentActivity extends GlobalActivity {
             txt_vptoken_detail.setText(vpTokens + " Store Credit @ $" + vpRate);
             txt_vptoken.setText("$" + vpFee);
             ly_vp_token.setVisibility(View.VISIBLE);
+            voucharString.add(vpTokens + " Store Credit @ $" + vpRate +":  " + "$" +vpFee);
+
         } else {
             ly_vp_token.setVisibility(View.GONE);
+        }
+
+        if (cust_type.equalsIgnoreCase(Constants.MERCHANT) && paymethod.equalsIgnoreCase(Constants.PAYMETHOD_EXCHANGE)) {
+            txt_token_detail.setText("Exchange Price");
+            txt_token.setText(Math.round(amount_final) + " Tokens");
+            txt_you_pay.setText(Math.round(amount_final) + " Tokens");
+            voucharString.add("Exchange Price " +"   " + String.format("%.2f", Math.round(amount_final)));
+            voucharString.add("Price You Pay " +"   " + String.format("%.2f", Math.round(amount_final)));
+
+            ly_insert_credit.setVisibility(View.GONE);
+        } else {
+            if (applied_token > 0) {
+                ly_normal_token.setVisibility(View.VISIBLE);
+                txt_token_detail.setText(txt_token_credit_store.getText().toString());
+                txt_token.setText("$" + String.format("%.2f", Float.parseFloat(tokenPrice) * applied_token));
+                voucharString.add(txt_token_credit_store.getText().toString()+" : " +"$" + String.format("%.2f", Float.parseFloat(tokenPrice) * applied_token));
+            } else {
+                ly_normal_token.setVisibility(View.GONE);
+            }
+            if (applied_store_credit > 0) {
+                ly_insert_credit.setVisibility(View.VISIBLE);
+                voucharString.add("Inserted Store Credit:  $" + String.format("%.2f", applied_store_credit));
+
+            } else
+                ly_insert_credit.setVisibility(View.GONE);
+            txt_you_pay.setText("$" + String.format("%.2f", amount_final));
+            voucharString.add("Price You Pay " +":  " + "$" + String.format("%.2f", amount_final));
+
         }
 
         TypefacedButton btn_pay = rowView.findViewById(R.id.btn_pay);
@@ -1711,6 +1745,15 @@ public class AdvPaymentActivity extends GlobalActivity {
             dlg_rec_prodlist.setVisibility(View.GONE);
 
         }
+
+        for(int i=0; i<DataKeeper.products_array.size(); i++){
+
+            voucharProdcutString.add((DataKeeper.products_array.get(i).title+"                                ").substring(0,24)+"  (x"+DataKeeper.products_array.get(i).qty+")"+"     "+"$"+DataKeeper.products_array.get(i).new_price+"    $"+DataKeeper.products_array.get(i).price_applied);
+
+        }
+
+
+
 
         finalCheckDialog.setContentView(rowView);
         finalCheckDialog.setCancelable(true);
@@ -1801,8 +1844,6 @@ public class AdvPaymentActivity extends GlobalActivity {
         btn_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                finishPaymentActivity();
                 dialog.dismiss();
             }
         });
@@ -1820,7 +1861,8 @@ public class AdvPaymentActivity extends GlobalActivity {
         dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialogInterface) {
-                finishPaymentActivity();
+                PrintActivity prnt =new PrintActivity(AdvPaymentActivity.this);
+                prnt.printer(voucharString,voucharProdcutString);
             }
         });
         dialog.show();
@@ -1945,6 +1987,8 @@ public class AdvPaymentActivity extends GlobalActivity {
                                     if (payByDialog != null)
                                         payByDialog.dismiss();
 
+
+
                                     dialogSuccessExit(deviceData.getString("message"));
                                 } else {
                                     Toast.makeText(getApplicationContext(), deviceData.getString("message"), Toast.LENGTH_SHORT).show();
@@ -1974,6 +2018,7 @@ public class AdvPaymentActivity extends GlobalActivity {
                     String points = (cust_id.length() > 0) ? "" + cust_points : "";
 
                     Map<String, String> params = new HashMap<>();
+
                     params.put("transaction", transactionMethod);
                     params.put("transaction_id", transaction_id);
                     params.put(customerid_text, (cust_id.length() > 0) ? cust_id : "" + 0);
@@ -2020,6 +2065,7 @@ public class AdvPaymentActivity extends GlobalActivity {
                         params.put("pareceiptid", "" + 0);
                         params.put("papaymentsuccess", "0");
                     }
+
 
                     Log.e("getParams", String.valueOf(params));
                     return params;

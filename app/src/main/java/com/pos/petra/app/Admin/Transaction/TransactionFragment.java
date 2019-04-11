@@ -223,10 +223,15 @@ public class TransactionFragment extends Fragment {
                             try {
                                 response = response.replace("loadlocationid", "");
                                 transaction = (new JSONObject(response)).getJSONObject("data").getJSONArray("transactions");
-                                if (((AdminListActivity) getActivity()).mTwoPane) {
+                                try{
+                                    if (((AdminListActivity) getActivity()).mTwoPane) {
+                                        NUM_ITEMS_PAGE = 8;
+                                    } else
+                                        NUM_ITEMS_PAGE = 15;
+                                }catch (Exception e) {
                                     NUM_ITEMS_PAGE = 8;
-                                } else
-                                    NUM_ITEMS_PAGE = 15;
+                                    e.printStackTrace();
+                                }
 
                                 TOTAL_LIST_ITEMS = transaction.length();
                                 Btnfooter(transaction);
@@ -236,6 +241,7 @@ public class TransactionFragment extends Fragment {
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
+
                         }
                     },
                     new Response.ErrorListener() {

@@ -25,6 +25,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/size_10"
+                    android:visibility="gone"
                     android:background="@color/grey_white"
                     android:layout_marginRight="@dimen/size_20"
                     android:orientation="horizontal">
@@ -39,13 +40,12 @@
                     android:src="@mipmap/petra" />
                 </LinearLayout>
 
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:gravity="left"
+                    android:paddingLeft="@dimen/size_10"
                     android:orientation="vertical">
 
                     <LinearLayout

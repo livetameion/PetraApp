@@ -102,7 +102,7 @@ import id.zelory.compressor.FileUtil;
  */
 public class ProductDashboardActivity extends GlobalActivity {
     // CONSTANTS
-    private static final String TAG = "SearchActivity";
+    private static final String TAG = "ProductDashboardActivity";
     public static final int VOICE_RECOGNITION_CODE = 15;
     public static boolean prod_deleted=false;
     public int[] selected_left={0,0,0,0};
@@ -818,11 +818,15 @@ public class ProductDashboardActivity extends GlobalActivity {
         {
             if(!imageupdate) {
                 myuri = null;
-                Picasso.get()
-                        .load(myuri)
-                        .placeholder(R.mipmap.petra)
-                        .error(R.mipmap.petra)
-                        .into(p_image);
+                try {
+                    Picasso.get()
+                            .load(myuri)
+                            .placeholder(R.mipmap.petra)
+                            .error(R.mipmap.petra)
+                            .into(p_image);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         }
     }

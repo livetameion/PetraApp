@@ -38,12 +38,14 @@ import com.android.volley.toolbox.Volley;
 import com.cunoraz.tagview.Tag;
 import com.cunoraz.tagview.TagView;
 import com.pos.petra.app.Admin.Transaction.TransactionFragment;
+import com.pos.petra.app.AdvancedCashier.CashierDashboardActivity;
 import com.pos.petra.app.AdvancedCashier.DataKeeper;
 import com.pos.petra.app.GlobalActivity;
 import com.pos.petra.app.Model.Roles.Cashiers;
 import com.pos.petra.app.Model.Product.Categories;
 import com.pos.petra.app.Model.Product.Products;
 import com.pos.petra.app.Model.Product.SubCategories;
+import com.pos.petra.app.Payment.AdvPaymentActivity;
 import com.pos.petra.app.R;
 import com.pos.petra.app.Util.Constants;
 import com.pos.petra.app.Util.CustomDialog;
@@ -173,6 +175,9 @@ public class SearchActivity extends GlobalActivity {
         fab_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(SearchActivity.this, AdvPaymentActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
                 finish();
 
             }

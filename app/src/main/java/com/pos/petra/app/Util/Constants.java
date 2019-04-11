@@ -11,7 +11,8 @@ public class Constants {
 
    //public  static final String baseUrl = "https://freedomchoiceglobal.com/api/demo/";
     //http://tramadolcapsules.com/petraApp/transactions.php?load=transactions&locationid=5
-    public  static final String baseUrl = "https://tramadolcapsules.com/petraApp/";
+ //   public  static final String baseUrl = "https://tramadolcapsules.com/petraApp/";
+     public  static final String baseUrl = "http://petra.briskwizards.tech/";
 
     public  static final String transactionsUrl = baseUrl + "transactions.php";
     public  static final String adv_transactionsUrl = baseUrl + "petra-transactions.php";

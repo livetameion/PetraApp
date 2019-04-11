@@ -9,7 +9,7 @@
     <string name="dataconnection">No Internet Connection. Please Turn On !!!</string>
     <string name="loginfailed">The phone and password don\'t match.</string>
     <string name="no_trsctn">No transactions today.</string>
-    <string name="version">Version 2.1</string>
+    <string name="version">Version 2.2.1</string>
     <string name="cannot_purachse_own">You can\'t make transactions from your own store.</string>
     <string name="title_item_list">PETRA</string>
     <string name="title_item_detail">Item Detail</string>
